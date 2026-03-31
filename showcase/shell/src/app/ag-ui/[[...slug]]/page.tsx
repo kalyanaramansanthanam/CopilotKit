@@ -87,10 +87,15 @@ export default async function AgUiDocPage({
 }) {
     const { slug } = await params;
     const slugPath = slug?.join("/") || "introduction";
-    const filePath = path.join(CONTENT_DIR, `${slugPath}.mdx`);
+    let filePath = path.join(CONTENT_DIR, `${slugPath}.mdx`);
 
     if (!fs.existsSync(filePath)) {
-        notFound();
+        const indexPath = path.join(CONTENT_DIR, slugPath, "index.mdx");
+        if (fs.existsSync(indexPath)) {
+            filePath = indexPath;
+        } else {
+            notFound();
+        }
     }
 
     const source = fs.readFileSync(filePath, "utf-8");

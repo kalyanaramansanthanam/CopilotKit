@@ -59,14 +59,32 @@ const components = {
         </div>
     ),
     Frame: ({ children }: { children: React.ReactNode }) => <div style={{ border: "1px solid var(--border)", borderRadius: "0.5rem", padding: "1rem", marginBottom: "1rem" }}>{children}</div>,
+    // Fumadocs-specific components we shim
+    IntegrationGrid: ({ path }: { path?: string }) => <div style={{ padding: "1rem", background: "var(--bg-elevated)", borderRadius: "0.5rem", marginBottom: "1rem", fontSize: "0.875rem", color: "var(--text-muted)" }}>See <a href="/integrations" style={{ color: "var(--accent)" }}>Integrations</a> for all available frameworks{path ? ` (${path})` : ""}.</div>,
+    FeatureGrid: ({ children }: { children?: React.ReactNode }) => <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "0.75rem" }}>{children}</div>,
+    Feature: ({ children, title }: { children?: React.ReactNode; title?: string }) => <div style={{ border: "1px solid var(--border)", borderRadius: "0.5rem", padding: "1rem" }}>{title && <h4 style={{ fontWeight: 600, marginBottom: "0.25rem" }}>{title}</h4>}{children}</div>,
+    video: (props: Record<string, unknown>) => <video {...props} className={undefined} style={{ borderRadius: "0.5rem", width: "100%", marginBottom: "1rem" }} />,
+    img: (props: Record<string, unknown>) => <img {...props} className={undefined} style={{ borderRadius: "0.5rem", maxWidth: "100%", marginBottom: "1rem" }} />,
+    CodeGroup: ({ children }: { children: React.ReactNode }) => <div>{children}</div>,
+    Snippet: ({ children }: { children?: React.ReactNode }) => <div>{children}</div>,
+    Info: Callout,
+    Caution: ({ children }: { children: React.ReactNode }) => <Callout type="warn">{children}</Callout>,
 };
 
 export default async function DocsPage({ params }: { params: Promise<{ slug?: string[] }> }) {
     const { slug } = await params;
     const slugPath = slug?.join("/") || "index";
-    const filePath = path.join(CONTENT_DIR, `${slugPath}.mdx`);
+    let filePath = path.join(CONTENT_DIR, `${slugPath}.mdx`);
 
-    if (!fs.existsSync(filePath)) notFound();
+    // Try index.mdx if the path is a directory
+    if (!fs.existsSync(filePath)) {
+        const indexPath = path.join(CONTENT_DIR, slugPath, "index.mdx");
+        if (fs.existsSync(indexPath)) {
+            filePath = indexPath;
+        } else {
+            notFound();
+        }
+    }
 
     const source = fs.readFileSync(filePath, "utf-8");
     const content = source.replace(/^---[\s\S]*?---\n?/, "");
