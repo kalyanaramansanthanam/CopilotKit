@@ -1,0 +1,764 @@
+[
+  {
+    "type": "page",
+    "title": "Home",
+    "subtitle": "Front door",
+    "href": "/"
+  },
+  {
+    "type": "page",
+    "title": "Integrations",
+    "subtitle": "All integrations",
+    "href": "/integrations"
+  },
+  {
+    "type": "page",
+    "title": "Feature Matrix",
+    "subtitle": "Compare features across integrations",
+    "href": "/matrix"
+  },
+  {
+    "type": "page",
+    "title": "API Reference",
+    "subtitle": "CopilotKit components and hooks",
+    "href": "/reference"
+  },
+  {
+    "type": "page",
+    "title": "AG-UI Overview",
+    "subtitle": "The Agent-User Interaction Protocol",
+    "href": "/ag-ui"
+  },
+  {
+    "type": "reference",
+    "title": "CopilotChat",
+    "subtitle": "`CopilotChat` is a high-level chat container that wires an agent into `CopilotChatView` while providing configuration co",
+    "href": "/reference/components/CopilotChat"
+  },
+  {
+    "type": "reference",
+    "title": "CopilotChatAssistantMessage",
+    "subtitle": "`CopilotChatAssistantMessage` displays assistant messages with Markdown support, tool call rendering, and an action tool",
+    "href": "/reference/components/CopilotChatAssistantMessage"
+  },
+  {
+    "type": "reference",
+    "title": "CopilotChatInput",
+    "subtitle": "`CopilotChatInput` is the primary text input and control surface for chat interactions. It provides a multi-line textare",
+    "href": "/reference/components/CopilotChatInput"
+  },
+  {
+    "type": "reference",
+    "title": "CopilotChatMessageView",
+    "subtitle": "`CopilotChatMessageView` renders a list of chat messages and, optionally, a typing cursor while the agent is running. It",
+    "href": "/reference/components/CopilotChatMessageView"
+  },
+  {
+    "type": "reference",
+    "title": "CopilotChatUserMessage",
+    "subtitle": "`CopilotChatUserMessage` shows user-authored messages aligned to the right with optional branch navigation. The default ",
+    "href": "/reference/components/CopilotChatUserMessage"
+  },
+  {
+    "type": "reference",
+    "title": "CopilotChatView",
+    "subtitle": "`CopilotChatView` is a layout component that combines a scrollable message transcript with the chat input area, suggesti",
+    "href": "/reference/components/CopilotChatView"
+  },
+  {
+    "type": "reference",
+    "title": "CopilotKit",
+    "subtitle": "This provider is shared across v1 and v2 APIs. It must be imported from the root package (`@copilotkit/react-core`), not",
+    "href": "/reference/components/CopilotKit"
+  },
+  {
+    "type": "reference",
+    "title": "CopilotPopup",
+    "subtitle": "`CopilotPopup` renders a floating chat popup with a toggle button. It wraps [`CopilotChat`](/reference/components/Copilo",
+    "href": "/reference/components/CopilotPopup"
+  },
+  {
+    "type": "reference",
+    "title": "CopilotSidebar",
+    "subtitle": "`CopilotSidebar` renders a fixed sidebar panel for chat interaction. It wraps [`CopilotChat`](/reference/components/Copi",
+    "href": "/reference/components/CopilotSidebar"
+  },
+  {
+    "type": "reference",
+    "title": "useAgent",
+    "subtitle": "`useAgent` is a React hook that returns an [AG-UI AbstractAgent](https://docs.ag-ui.com/sdk/js/client/abstract-agent) in",
+    "href": "/reference/hooks/useAgent"
+  },
+  {
+    "type": "reference",
+    "title": "useAgentContext",
+    "subtitle": "`useAgentContext` registers a dynamic context object with the active Copilot runtime for the lifetime of the component. ",
+    "href": "/reference/hooks/useAgentContext"
+  },
+  {
+    "type": "reference",
+    "title": "useComponent",
+    "subtitle": "`useComponent` is a convenience hook built on top of `useFrontendTool`.",
+    "href": "/reference/hooks/useComponent"
+  },
+  {
+    "type": "reference",
+    "title": "useConfigureSuggestions",
+    "subtitle": "`useConfigureSuggestions` is a React hook that registers a suggestions configuration with the CopilotKit core. It suppor",
+    "href": "/reference/hooks/useConfigureSuggestions"
+  },
+  {
+    "type": "reference",
+    "title": "useCopilotChatConfiguration",
+    "subtitle": "`useCopilotChatConfiguration` is a React hook that reads the chat configuration context. It returns the configuration va",
+    "href": "/reference/hooks/useCopilotChatConfiguration"
+  },
+  {
+    "type": "reference",
+    "title": "useCopilotKit",
+    "subtitle": "`useCopilotKit` is a low-level React hook that returns the CopilotKit context value, providing direct access to the core",
+    "href": "/reference/hooks/useCopilotKit"
+  },
+  {
+    "type": "reference",
+    "title": "useDefaultRenderTool",
+    "subtitle": "`useDefaultRenderTool` is a convenience wrapper around `useRenderTool` with `name: \"*\"`.",
+    "href": "/reference/hooks/useDefaultRenderTool"
+  },
+  {
+    "type": "reference",
+    "title": "useFrontendTool",
+    "subtitle": "`useFrontendTool` registers a client-side tool with CopilotKit at component scope. When the agent decides to call the to",
+    "href": "/reference/hooks/useFrontendTool"
+  },
+  {
+    "type": "reference",
+    "title": "useHumanInTheLoop",
+    "subtitle": "`useHumanInTheLoop` registers an interactive tool that pauses agent execution until the user responds through your custo",
+    "href": "/reference/hooks/useHumanInTheLoop"
+  },
+  {
+    "type": "reference",
+    "title": "useInterrupt",
+    "subtitle": "`useInterrupt` listens for agent custom events named `on_interrupt`, captures the latest interrupt payload for a run, an",
+    "href": "/reference/hooks/useInterrupt"
+  },
+  {
+    "type": "reference",
+    "title": "useRenderTool",
+    "subtitle": "`useRenderTool` registers a chat renderer for tool calls.",
+    "href": "/reference/hooks/useRenderTool"
+  },
+  {
+    "type": "reference",
+    "title": "useRenderToolCall",
+    "subtitle": "`useRenderToolCall` returns a renderer function that maps tool calls to React elements. The returned function looks up t",
+    "href": "/reference/hooks/useRenderToolCall"
+  },
+  {
+    "type": "reference",
+    "title": "useSuggestions",
+    "subtitle": "`useSuggestions` is a React hook that provides access to the current chat suggestions for a given agent. It subscribes t",
+    "href": "/reference/hooks/useSuggestions"
+  },
+  {
+    "type": "reference",
+    "title": "API Reference",
+    "subtitle": "The v2 React API (`@copilotkit/react-core/v2`) is the next-generation interface for building copilot-powered application",
+    "href": "/reference"
+  },
+  {
+    "type": "ag-ui",
+    "title": "MCP, A2A, and AG-UI",
+    "subtitle": "The agentic ecosystem is rapidly organizing around a family of open, complementary protocols — each addressing a distinc",
+    "href": "/ag-ui/agentic-protocols"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Agents",
+    "subtitle": "Agents are the core components in the AG-UI protocol that process requests and",
+    "href": "/ag-ui/concepts/agents"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Core architecture",
+    "subtitle": "Agent User Interaction Protocol (AG-UI) is built on a flexible, event-driven",
+    "href": "/ag-ui/concepts/architecture"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Capabilities",
+    "subtitle": "Agents in the AG-UI protocol can declare what they support at runtime through",
+    "href": "/ag-ui/concepts/capabilities"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Events",
+    "subtitle": "The Agent User Interaction Protocol uses a streaming event-based architecture.",
+    "href": "/ag-ui/concepts/events"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Generative UI",
+    "subtitle": "Several recently released specs have enabled agents to return generative UI, increasing the power and flexibility of the",
+    "href": "/ag-ui/concepts/generative-ui-specs"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Messages",
+    "subtitle": "Messages form the backbone of communication in the AG-UI protocol. They",
+    "href": "/ag-ui/concepts/messages"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Middleware",
+    "subtitle": "Middleware in AG-UI provides a powerful way to transform, filter, and augment the event streams that flow through agents",
+    "href": "/ag-ui/concepts/middleware"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Reasoning",
+    "subtitle": "AG-UI provides first-class support for LLM reasoning, enabling chain-of-thought",
+    "href": "/ag-ui/concepts/reasoning"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Serialization",
+    "subtitle": "Serialization in AG-UI provides a standard way to persist and restore the event",
+    "href": "/ag-ui/concepts/serialization"
+  },
+  {
+    "type": "ag-ui",
+    "title": "State Management",
+    "subtitle": "State management is a core feature of the AG-UI protocol that enables real-time",
+    "href": "/ag-ui/concepts/state"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Tools",
+    "subtitle": "Tools are a fundamental concept in the AG-UI protocol that enable AI agents to",
+    "href": "/ag-ui/concepts/tools"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Contributing",
+    "subtitle": "Add your package under `integrations/` with docs and tests.",
+    "href": "/ag-ui/development/contributing"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Roadmap",
+    "subtitle": "You can follow the progress of the AG-UI Protocol on our",
+    "href": "/ag-ui/development/roadmap"
+  },
+  {
+    "type": "ag-ui",
+    "title": "What's New",
+    "subtitle": "- Initial release of the Agent User Interaction Protocol",
+    "href": "/ag-ui/development/updates"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Generative User Interfaces",
+    "subtitle": "Currently, creating custom user interfaces for agent interactions requires",
+    "href": "/ag-ui/drafts/generative-ui"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Interrupt-Aware Run Lifecycle",
+    "subtitle": "Agents often need to pause execution to request human approval, gather",
+    "href": "/ag-ui/drafts/interrupts"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Meta Events",
+    "subtitle": "Currently, AG-UI events are tightly coupled to agent runs. There's no",
+    "href": "/ag-ui/drafts/meta-events"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Multi-modal Messages",
+    "subtitle": "Current AG-UI protocol only supports text-based user messages. As LLMs",
+    "href": "/ag-ui/drafts/multimodal-messages"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Overview",
+    "subtitle": "This section contains draft changes being considered for the AG-UI protocol. These proposals are under internal review a",
+    "href": "/ag-ui/drafts/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Integrations",
+    "subtitle": "This page showcases various Agent User Interaction Protocol (AG-UI) integrations",
+    "href": "/ag-ui/integrations"
+  },
+  {
+    "type": "ag-ui",
+    "title": "AG-UI Overview",
+    "subtitle": "AG-UI is an <u><strong>open</strong></u>, <u><strong>lightweight</strong></u>, <u><strong>event-based</strong></u> proto",
+    "href": "/ag-ui/introduction"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Build applications",
+    "subtitle": "AG-UI provides a concise, event-driven protocol that lets any agent stream rich,",
+    "href": "/ag-ui/quickstart/applications"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Build clients",
+    "subtitle": "A client implementation allows you to **build conversational applications that",
+    "href": "/ag-ui/quickstart/clients"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Introduction",
+    "subtitle": "src=\"https://copilotkit-public-assets.s3.us-east-1.amazonaws.com/docs/ag-ui/ag-ui-animation-simple.mp4\"",
+    "href": "/ag-ui/quickstart/introduction"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Middleware",
+    "subtitle": "A middleware implementation allows you to **translate existing protocols and",
+    "href": "/ag-ui/quickstart/middleware"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Server",
+    "subtitle": "A server implementation allows you to **emit AG-UI events directly from your",
+    "href": "/ag-ui/quickstart/server"
+  },
+  {
+    "type": "ag-ui",
+    "title": "AgUiClient",
+    "subtitle": "The `AgUiClient` class is the primary interface for connecting to AG-UI compatible servers. It handles HTTP communicatio",
+    "href": "/ag-ui/sdk/dart/client/client"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Overview",
+    "subtitle": "The Agent User Interaction Protocol Client SDK provides agent connectivity options for Dart applications. This package d",
+    "href": "/ag-ui/sdk/dart/client/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Events",
+    "subtitle": "The AG-UI protocol uses a comprehensive event system for agent-UI communication. All events extend from `BaseEvent` and ",
+    "href": "/ag-ui/sdk/dart/core/events"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Overview",
+    "subtitle": "dart pub add ag_ui",
+    "href": "/ag-ui/sdk/dart/core/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Types",
+    "subtitle": "The AG-UI Dart SDK provides strongly-typed data structures for agent interactions. All types are immutable and support J",
+    "href": "/ag-ui/sdk/dart/core/types"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Encoder",
+    "subtitle": "The AG-UI Dart SDK includes a highly efficient binary encoding system for optimal data transmission between clients and ",
+    "href": "/ag-ui/sdk/dart/encoder/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Dart SDK",
+    "subtitle": "The Agent User Interaction Protocol Dart SDK provides a complete implementation for building AI applications in Dart and",
+    "href": "/ag-ui/sdk/dart/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Overview",
+    "subtitle": "The AG-UI Go SDK client package provides Server-Sent Events (SSE) connectivity for real-time event streaming from AG-UI ",
+    "href": "/ag-ui/sdk/go/client/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "SSE Client",
+    "subtitle": "The SSE Client provides real-time streaming connectivity to AG-UI agents using Server-Sent Events (SSE). It handles conn",
+    "href": "/ag-ui/sdk/go/client/sse-client"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Events",
+    "subtitle": "The AG-UI Protocol SDK uses a streaming event-based architecture. Events are the fundamental units of communication betw",
+    "href": "/ag-ui/sdk/go/core/events"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Overview",
+    "subtitle": "The core package provides the fundamental types and interfaces that power the AG-UI protocol in Go. These types represen",
+    "href": "/ag-ui/sdk/go/core/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Types",
+    "subtitle": "The Agent User Interaction Protocol Go SDK is built on a set of core types that represent the fundamental structures use",
+    "href": "/ag-ui/sdk/go/core/types"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Encoding Overview",
+    "subtitle": "The encoding package provides a comprehensive system for encoding, decoding, and content negotiation in the AG-UI Go SDK",
+    "href": "/ag-ui/sdk/go/encoding/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Error Handling",
+    "subtitle": "The AG-UI Go SDK provides a comprehensive error handling system with custom error types, severity-based handling, contex",
+    "href": "/ag-ui/sdk/go/errors/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Go SDK Overview",
+    "subtitle": "The AG-UI Go SDK provides a robust and idiomatic way to connect Go applications to AG-UI agents. It enables real-time st",
+    "href": "/ag-ui/sdk/go/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "AbstractAgent",
+    "subtitle": "The `AbstractAgent` class provides the foundation for agent implementations. It handles event stream processing, state m",
+    "href": "/ag-ui/sdk/java/client/abstract-agent"
+  },
+  {
+    "type": "ag-ui",
+    "title": "HttpAgent",
+    "subtitle": "`HttpAgent` extends `AbstractAgent` to provide HTTP-based connectivity to remote AI agents. It delegates streaming to a ",
+    "href": "/ag-ui/sdk/java/client/http-agent"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Overview",
+    "subtitle": "The Java Client SDK provides agent connectivity options for AI systems. It builds on the core types and events to delive",
+    "href": "/ag-ui/sdk/java/client/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "AgentSubscriber",
+    "subtitle": "Implement `AgentSubscriber` to handle lifecycle, message, tool call, and state events during agent execution.",
+    "href": "/ag-ui/sdk/java/client/subscriber"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Events",
+    "subtitle": "All events live in `com.agui.core.event` and share `BaseEvent` with a `type` and `timestamp`.",
+    "href": "/ag-ui/sdk/java/core/events"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Overview",
+    "subtitle": "The Agent User Interaction Protocol SDK uses a streaming event-based",
+    "href": "/ag-ui/sdk/java/core/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Event Stream",
+    "subtitle": "Streaming is built around `IEventStream<T>` with a concrete `EventStream<BaseEvent>` implementation.",
+    "href": "/ag-ui/sdk/java/core/stream"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Subscription",
+    "subtitle": "Use `Subscription` to manage persistent listeners registered via `AbstractAgent.subscribe`.",
+    "href": "/ag-ui/sdk/java/core/subscription"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Types",
+    "subtitle": "Input parameters prepared before an agent run. Built internally from `RunAgentParameters` and agent state.",
+    "href": "/ag-ui/sdk/java/core/types"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Java SDK Overview",
+    "subtitle": "The AG-UI Java SDK provides a robust and idiomatic way to connect Java applications to AG-UI agents.",
+    "href": "/ag-ui/sdk/java/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Overview",
+    "subtitle": "Server-side utilities for building agents and streaming events to clients.",
+    "href": "/ag-ui/sdk/java/server/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Spring",
+    "subtitle": "Use `AgUiService` to stream events to web clients via SSE.",
+    "href": "/ag-ui/sdk/java/server/spring"
+  },
+  {
+    "type": "ag-ui",
+    "title": "AbstractAgent",
+    "subtitle": "The `AbstractAgent` class provides the foundation for all agent implementations",
+    "href": "/ag-ui/sdk/js/client/abstract-agent"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Stream Compaction",
+    "subtitle": "`compactEvents` reduces verbose streaming sequences in an event array while",
+    "href": "/ag-ui/sdk/js/client/compaction"
+  },
+  {
+    "type": "ag-ui",
+    "title": "HttpAgent",
+    "subtitle": "The `HttpAgent` extends `AbstractAgent` to provide HTTP-based connectivity to",
+    "href": "/ag-ui/sdk/js/client/http-agent"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Middleware",
+    "subtitle": "The middleware system in `@ag-ui/client` provides a powerful way to transform, filter, and augment event streams flowing",
+    "href": "/ag-ui/sdk/js/client/middleware"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Overview",
+    "subtitle": "The Agent User Interaction Protocol Client SDK provides agent connectivity",
+    "href": "/ag-ui/sdk/js/client/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "AgentSubscriber",
+    "subtitle": "The `AgentSubscriber` interface provides a comprehensive event-driven system for",
+    "href": "/ag-ui/sdk/js/client/subscriber"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Events",
+    "subtitle": "The Agent User Interaction Protocol SDK uses a streaming event-based",
+    "href": "/ag-ui/sdk/js/core/events"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Multimodal Inputs",
+    "subtitle": "`UserMessage.content` accepts either plain text or an ordered array of",
+    "href": "/ag-ui/sdk/js/core/multimodal-inputs"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Overview",
+    "subtitle": "The Agent User Interaction Protocol SDK uses a streaming event-based",
+    "href": "/ag-ui/sdk/js/core/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Types",
+    "subtitle": "The Agent User Interaction Protocol SDK is built on a set of core types that",
+    "href": "/ag-ui/sdk/js/core/types"
+  },
+  {
+    "type": "ag-ui",
+    "title": "@ag-ui/encoder",
+    "subtitle": "",
+    "href": "/ag-ui/sdk/js/encoder"
+  },
+  {
+    "type": "ag-ui",
+    "title": "overview",
+    "subtitle": "",
+    "href": "/ag-ui/sdk/js/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "@ag-ui/proto",
+    "subtitle": "",
+    "href": "/ag-ui/sdk/js/proto"
+  },
+  {
+    "type": "ag-ui",
+    "title": "AbstractAgent",
+    "subtitle": "`AbstractAgent` is the base class that provides the foundation for implementing custom agent connectivity patterns. It d",
+    "href": "/ag-ui/sdk/kotlin/client/abstract-agent"
+  },
+  {
+    "type": "ag-ui",
+    "title": "AgUiAgent",
+    "subtitle": "`AgUiAgent` is a stateless client implementation designed for cases where no ongoing context is needed or where the agen",
+    "href": "/ag-ui/sdk/kotlin/client/agui-agent"
+  },
+  {
+    "type": "ag-ui",
+    "title": "HttpAgent",
+    "subtitle": "`HttpAgent` is a low-level HTTP transport implementation that provides direct control over AG-UI protocol communication.",
+    "href": "/ag-ui/sdk/kotlin/client/http-agent"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Client Module Overview",
+    "subtitle": "The `kotlin-client` module provides high-level agent implementations and client infrastructure for connecting to AI agen",
+    "href": "/ag-ui/sdk/kotlin/client/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "StatefulAgUiAgent",
+    "subtitle": "`StatefulAgUiAgent` is a stateful client implementation that automatically maintains conversation history and sends the ",
+    "href": "/ag-ui/sdk/kotlin/client/stateful-agui-agent"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Events",
+    "subtitle": "The AG-UI protocol defines 25 event types that represent the complete lifecycle of agent interactions. Events are emitte",
+    "href": "/ag-ui/sdk/kotlin/core/events"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Core Module Overview",
+    "subtitle": "The `kotlin-core` module provides the fundamental building blocks of the AG-UI protocol implementation. It contains all ",
+    "href": "/ag-ui/sdk/kotlin/core/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Types",
+    "subtitle": "The AG-UI protocol defines message types, tool definitions, and data structures for agent communication. The core module",
+    "href": "/ag-ui/sdk/kotlin/core/types"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Kotlin SDK Overview",
+    "subtitle": "The AG-UI Kotlin SDK is a Kotlin Multiplatform library for building AI agent user interfaces that implement the Agent Us",
+    "href": "/ag-ui/sdk/kotlin/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Tools Module Overview",
+    "subtitle": "The `kotlin-tools` module provides a framework for executing client-side tools that agents can call during conversations",
+    "href": "/ag-ui/sdk/kotlin/tools/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "ToolExecutor",
+    "subtitle": "`ToolExecutor` is the interface for implementing custom tools that agents can call during conversations. Tools execute c",
+    "href": "/ag-ui/sdk/kotlin/tools/tool-executor"
+  },
+  {
+    "type": "ag-ui",
+    "title": "ToolRegistry",
+    "subtitle": "`ToolRegistry` manages tool executors and handles tool execution with timeout handling, statistics tracking, and thread-",
+    "href": "/ag-ui/sdk/kotlin/tools/tool-registry"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Events",
+    "subtitle": "The Agent User Interaction Protocol Python SDK uses a streaming event-based",
+    "href": "/ag-ui/sdk/python/core/events"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Multimodal Inputs",
+    "subtitle": "`UserMessage.content` accepts either plain text or an ordered list of multimodal",
+    "href": "/ag-ui/sdk/python/core/multimodal-inputs"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Overview",
+    "subtitle": "pip install ag-ui-protocol",
+    "href": "/ag-ui/sdk/python/core/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Types",
+    "subtitle": "The Agent User Interaction Protocol Python SDK is built on a set of core types",
+    "href": "/ag-ui/sdk/python/core/types"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Overview",
+    "subtitle": "pip install ag-ui-protocol",
+    "href": "/ag-ui/sdk/python/encoder/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Events",
+    "subtitle": "The Agent User Interaction Protocol Ruby SDK uses a streaming event-based",
+    "href": "/ag-ui/sdk/ruby/core/events"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Overview",
+    "subtitle": "bundle add ag-ui-protocol",
+    "href": "/ag-ui/sdk/ruby/core/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Types",
+    "subtitle": "The Agent User Interaction Protocol Ruby SDK is built on a set of core types",
+    "href": "/ag-ui/sdk/ruby/core/types"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Overview",
+    "subtitle": "The Agent User Interaction Protocol uses a streaming approach to send events",
+    "href": "/ag-ui/sdk/ruby/encoder/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Ruby SDK Overview",
+    "subtitle": "The AG-UI Ruby SDK provides a robust and idiomatic way to connect Ruby applications to AG-UI agents. It enables real-tim",
+    "href": "/ag-ui/sdk/ruby/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Agent",
+    "subtitle": "The Agent trait defines the contract for connecting any execution backend to AG‑UI. Concrete implementations (like HttpA",
+    "href": "/ag-ui/sdk/rust/client/agent-trait"
+  },
+  {
+    "type": "ag-ui",
+    "title": "HttpAgent",
+    "subtitle": "The HttpAgent implements the Agent trait to provide HTTP-based connectivity to remote AI agents. It sends a POST request",
+    "href": "/ag-ui/sdk/rust/client/http-agent"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Overview",
+    "subtitle": "The Agent User Interaction Protocol Client SDK provides agent connectivity",
+    "href": "/ag-ui/sdk/rust/client/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "AgentSubscriber",
+    "subtitle": "The AgentSubscriber trait provides an event-driven system for handling agent lifecycle events, message updates, and stat",
+    "href": "/ag-ui/sdk/rust/client/subscriber"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Events",
+    "subtitle": "Agents emit a stream of events during execution. The Rust client decodes an SSE stream into Event<StateT> values.",
+    "href": "/ag-ui/sdk/rust/core/events"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Overview",
+    "subtitle": "The core crate defines the shared types and event model used across the Rust SDK. Client implementations (like ag-ui-cli",
+    "href": "/ag-ui/sdk/rust/core/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Types",
+    "subtitle": "Core types live in ag_ui_core::types and are re-exported by ag-ui-client under ag_ui_client::core::types.",
+    "href": "/ag-ui/sdk/rust/core/types"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Rust SDK",
+    "subtitle": "The Rust SDK consists of two crates:",
+    "href": "/ag-ui/sdk/rust/overview"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Developing with Cursor",
+    "subtitle": "This guide will help you set up Cursor to help you build custom Agent User",
+    "href": "/ag-ui/tutorials/cursor"
+  },
+  {
+    "type": "ag-ui",
+    "title": "Debugging",
+    "subtitle": "Debugging agent-based applications can be challenging, especially when working",
+    "href": "/ag-ui/tutorials/debugging"
+  }
+]
