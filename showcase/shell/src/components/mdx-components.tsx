@@ -41,7 +41,7 @@ export function Callout({
     );
 }
 
-export function Cards({ children }: { children: React.ReactNode }) {
+export function Cards({ children, className: _className }: { children: React.ReactNode; className?: string }) {
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
             {children}
@@ -58,6 +58,8 @@ export function Card({
     description?: string;
     href?: string;
     icon?: React.ReactNode;
+    className?: string;
+    children?: React.ReactNode;
 }) {
     const content = (
         <div className="rounded-lg border border-[var(--border)] bg-[var(--bg-surface)] p-4 hover:bg-[var(--bg-elevated)] transition-colors">
