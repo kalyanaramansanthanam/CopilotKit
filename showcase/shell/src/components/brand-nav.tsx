@@ -12,17 +12,17 @@ const COPILOTKIT_LINKS = [
     { href: "/", label: "Home" },
     { href: "/integrations", label: "Integrations" },
     { href: "/docs", label: "Docs" },
+    { href: "/docs/learn", label: "Learn" },
     { href: "/reference", label: "Reference" },
     { href: "/matrix", label: "Matrix" },
 ];
 
 const AG_UI_LINKS = [
     { href: "/ag-ui", label: "Overview" },
-    { href: "/ag-ui/concepts/architecture", label: "Architecture" },
-    { href: "/ag-ui/concepts/events", label: "Events" },
+    { href: "/ag-ui/concepts/architecture", label: "Concepts" },
+    { href: "/ag-ui/quickstart/introduction", label: "Quick Start" },
     { href: "/ag-ui/sdk/js/overview", label: "JS SDK" },
     { href: "/ag-ui/sdk/python/core/overview", label: "Python SDK" },
-    { href: "/ag-ui/quickstart/introduction", label: "Quick Start" },
 ];
 
 function activeBrandFromPath(pathname: string): Brand {

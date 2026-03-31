@@ -12,20 +12,31 @@ export default function AgUiOverviewPage() {
                 streaming agent state, tool calls, and generative UI to any client.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left mb-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-left mb-10">
                 <Link
-                    href="/protocol"
+                    href="/ag-ui/concepts/architecture"
                     className="group p-5 rounded-xl border border-[var(--border)] bg-[var(--bg-surface)] hover:border-[var(--violet)] transition-all"
                 >
                     <h3 className="text-sm font-semibold text-[var(--text)] group-hover:text-[var(--violet)] mb-1">
-                        Protocol Spec
+                        Concepts
                     </h3>
                     <p className="text-xs text-[var(--text-muted)]">
-                        Architecture, events, streaming, state management
+                        Architecture, events, agents, state, tools, middleware
                     </p>
                 </Link>
                 <Link
-                    href="/sdk/js"
+                    href="/ag-ui/quickstart/introduction"
+                    className="group p-5 rounded-xl border border-[var(--border)] bg-[var(--bg-surface)] hover:border-[var(--violet)] transition-all"
+                >
+                    <h3 className="text-sm font-semibold text-[var(--text)] group-hover:text-[var(--violet)] mb-1">
+                        Quick Start
+                    </h3>
+                    <p className="text-xs text-[var(--text-muted)]">
+                        Build your first AG-UI integration step by step
+                    </p>
+                </Link>
+                <Link
+                    href="/ag-ui/sdk/js/overview"
                     className="group p-5 rounded-xl border border-[var(--border)] bg-[var(--bg-surface)] hover:border-[var(--violet)] transition-all"
                 >
                     <h3 className="text-sm font-semibold text-[var(--text)] group-hover:text-[var(--violet)] mb-1">
@@ -36,7 +47,7 @@ export default function AgUiOverviewPage() {
                     </p>
                 </Link>
                 <Link
-                    href="/sdk/python"
+                    href="/ag-ui/sdk/python/core/overview"
                     className="group p-5 rounded-xl border border-[var(--border)] bg-[var(--bg-surface)] hover:border-[var(--violet)] transition-all"
                 >
                     <h3 className="text-sm font-semibold text-[var(--text)] group-hover:text-[var(--violet)] mb-1">
@@ -44,6 +55,17 @@ export default function AgUiOverviewPage() {
                     </h3>
                     <p className="text-xs text-[var(--text-muted)]">
                         ag_ui.core, ag_ui.encoder
+                    </p>
+                </Link>
+                <Link
+                    href="/ag-ui/tutorials/cursor"
+                    className="group p-5 rounded-xl border border-[var(--border)] bg-[var(--bg-surface)] hover:border-[var(--violet)] transition-all"
+                >
+                    <h3 className="text-sm font-semibold text-[var(--text)] group-hover:text-[var(--violet)] mb-1">
+                        Tutorials
+                    </h3>
+                    <p className="text-xs text-[var(--text-muted)]">
+                        Hands-on guides and debugging walkthroughs
                     </p>
                 </Link>
                 <a
