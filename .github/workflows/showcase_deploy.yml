@@ -22,6 +22,7 @@ on:
           - google-adk
           - ag2
           - agno
+          - llamaindex
 
 concurrency:
   group: showcase-deploy-${{ github.ref }}
@@ -40,6 +41,7 @@ jobs:
       google_adk: ${{ steps.changes.outputs.google_adk }}
       ag2: ${{ steps.changes.outputs.ag2 }}
       agno: ${{ steps.changes.outputs.agno }}
+      llamaindex: ${{ steps.changes.outputs.llamaindex }}
     steps:
       - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3
@@ -65,6 +67,8 @@ jobs:
               - 'showcase/packages/ag2/**'
             agno:
               - 'showcase/packages/agno/**'
+            llamaindex:
+              - 'showcase/packages/llamaindex/**'
 
   check-lockfile:
     name: Verify Lockfile
@@ -426,3 +430,46 @@ jobs:
             -H "Content-Type: application/json" \
             -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"RAILWAY_SERVICE_ID\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
             && echo "agno deploy triggered"
+
+  build-llamaindex:
+    name: Build & Push LlamaIndex
+    needs: [detect-changes, check-lockfile]
+    if: |
+      needs.detect-changes.outputs.llamaindex == 'true' ||
+      github.event.inputs.service == 'llamaindex' ||
+      github.event.inputs.service == 'all'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: showcase/packages/llamaindex
+          push: true
+          tags: |
+            ghcr.io/copilotkit/showcase-llamaindex:latest
+            ghcr.io/copilotkit/showcase-llamaindex:${{ github.sha }}
+          cache-from: type=gha,scope=llamaindex
+          cache-to: type=gha,scope=llamaindex,mode=max
+
+      - name: Trigger Railway deploy
+        run: |
+          curl -sf -X POST https://backboard.railway.com/graphql/v2 \
+            -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"RAILWAY_SERVICE_ID\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
+            && echo "llamaindex deploy triggered"

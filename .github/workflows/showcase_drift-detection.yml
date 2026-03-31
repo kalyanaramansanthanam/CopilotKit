@@ -44,6 +44,9 @@ jobs:
           - slug: agno
             name: "Agno"
             url: https://showcase-agno-production.up.railway.app
+          - slug: llamaindex
+            name: "LlamaIndex"
+            url: https://showcase-llamaindex-production.up.railway.app
 
     steps:
       - name: Checkout
