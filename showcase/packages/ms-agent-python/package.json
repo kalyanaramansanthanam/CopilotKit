@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@copilotkit/react-core": "next",
-    "@ag-ui/client": "0.0.46",
     "@copilotkit/runtime": "next",
     "next": "^15.0.0",
     "react": "^19.0.0",

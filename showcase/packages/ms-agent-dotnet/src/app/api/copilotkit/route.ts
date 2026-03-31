@@ -4,7 +4,7 @@ import {
     ExperimentalEmptyAdapter,
     copilotRuntimeNextJSAppRouterEndpoint,
 } from "@copilotkit/runtime";
-import { HttpAgent } from "@ag-ui/client";
+import { LangGraphAgent } from "@copilotkit/runtime/langgraph";
 
 // The .NET agent backend runs as a separate process on port 8000.
 // This runtime proxies CopilotKit requests to it via AG-UI protocol.
@@ -14,7 +14,7 @@ console.log("[copilotkit/route] Initializing CopilotKit runtime");
 console.log(`[copilotkit/route] AGENT_URL: ${AGENT_URL}`);
 
 function createAgent() {
-    return new HttpAgent({ url: `${AGENT_URL}/` });
+    return new LangGraphAgent({ deploymentUrl: `${AGENT_URL}/` });
 }
 
 // Register the same agent under all names used by demo pages.
@@ -27,7 +27,7 @@ const agentNames = [
     "gen-ui-tool-based",
 ];
 
-const agents: Record<string, HttpAgent> = {};
+const agents: Record<string, LangGraphAgent> = {};
 for (const name of agentNames) {
     agents[name] = createAgent();
 }

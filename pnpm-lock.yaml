@@ -2778,9 +2778,6 @@ importers:
 
   showcase/packages/ag2:
     dependencies:
-      '@ag-ui/client':
-        specifier: 0.0.46
-        version: 0.0.46
       '@copilotkit/react-core':
         specifier: next
         version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
@@ -2827,9 +2824,6 @@ importers:
 
   showcase/packages/agno:
     dependencies:
-      '@ag-ui/client':
-        specifier: 0.0.46
-        version: 0.0.46
       '@copilotkit/react-core':
         specifier: next
         version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
@@ -2876,9 +2870,6 @@ importers:
 
   showcase/packages/claude-sdk-python:
     dependencies:
-      '@ag-ui/client':
-        specifier: 0.0.46
-        version: 0.0.46
       '@copilotkit/react-core':
         specifier: next
         version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
@@ -2925,9 +2916,6 @@ importers:
 
   showcase/packages/claude-sdk-typescript:
     dependencies:
-      '@ag-ui/client':
-        specifier: 0.0.46
-        version: 0.0.46
       '@ag-ui/core':
         specifier: ^0.0.48
         version: 0.0.48
@@ -2992,9 +2980,6 @@ importers:
 
   showcase/packages/crewai-crews:
     dependencies:
-      '@ag-ui/client':
-        specifier: 0.0.46
-        version: 0.0.46
       '@copilotkit/react-core':
         specifier: next
         version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
@@ -3041,9 +3026,6 @@ importers:
 
   showcase/packages/google-adk:
     dependencies:
-      '@ag-ui/client':
-        specifier: 0.0.46
-        version: 0.0.46
       '@copilotkit/react-core':
         specifier: next
         version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
@@ -3090,9 +3072,6 @@ importers:
 
   showcase/packages/langgraph-fastapi:
     dependencies:
-      '@ag-ui/client':
-        specifier: 0.0.46
-        version: 0.0.46
       '@copilotkit/react-core':
         specifier: next
         version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
@@ -3185,9 +3164,6 @@ importers:
 
   showcase/packages/langgraph-typescript:
     dependencies:
-      '@ag-ui/client':
-        specifier: 0.0.46
-        version: 0.0.46
       '@copilotkit/react-core':
         specifier: next
         version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
@@ -3249,9 +3225,6 @@ importers:
 
   showcase/packages/langroid:
     dependencies:
-      '@ag-ui/client':
-        specifier: 0.0.46
-        version: 0.0.46
       '@copilotkit/react-core':
         specifier: next
         version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
@@ -3298,9 +3271,6 @@ importers:
 
   showcase/packages/llamaindex:
     dependencies:
-      '@ag-ui/client':
-        specifier: 0.0.46
-        version: 0.0.46
       '@copilotkit/react-core':
         specifier: next
         version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
@@ -3347,12 +3317,9 @@ importers:
 
   showcase/packages/mastra:
     dependencies:
-      '@ag-ui/client':
-        specifier: 0.0.46
-        version: 0.0.46
       '@ag-ui/mastra':
         specifier: beta
-        version: 0.2.1-beta.2(43a4ac354ab2be7ea52235c7aa90092d)
+        version: 0.2.1-beta.2(b1fe2941770656196a11a624e98ee2e4)
       '@ai-sdk/openai':
         specifier: ^2.0.42
         version: 2.0.101(zod@3.25.76)
@@ -3420,9 +3387,6 @@ importers:
 
   showcase/packages/ms-agent-dotnet:
     dependencies:
-      '@ag-ui/client':
-        specifier: 0.0.46
-        version: 0.0.46
       '@copilotkit/react-core':
         specifier: next
         version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
@@ -3469,9 +3433,6 @@ importers:
 
   showcase/packages/ms-agent-python:
     dependencies:
-      '@ag-ui/client':
-        specifier: 0.0.46
-        version: 0.0.46
       '@copilotkit/react-core':
         specifier: next
         version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
@@ -3518,9 +3479,6 @@ importers:
 
   showcase/packages/pydantic-ai:
     dependencies:
-      '@ag-ui/client':
-        specifier: 0.0.46
-        version: 0.0.46
       '@copilotkit/react-core':
         specifier: next
         version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
@@ -3567,9 +3525,6 @@ importers:
 
   showcase/packages/spring-ai:
     dependencies:
-      '@ag-ui/client':
-        specifier: 0.0.46
-        version: 0.0.46
       '@copilotkit/react-core':
         specifier: next
         version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
@@ -3613,9 +3568,6 @@ importers:
 
   showcase/packages/strands:
     dependencies:
-      '@ag-ui/client':
-        specifier: 0.0.46
-        version: 0.0.46
       '@copilotkit/react-core':
         specifier: next
         version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
@@ -23546,9 +23498,9 @@ snapshots:
       - react-dom
       - zod-to-json-schema
 
-  '@ag-ui/mastra@0.2.1-beta.2(43a4ac354ab2be7ea52235c7aa90092d)':
+  '@ag-ui/mastra@0.2.1-beta.2(b1fe2941770656196a11a624e98ee2e4)':
     dependencies:
-      '@ag-ui/client': 0.0.46
+      '@ag-ui/client': 0.0.48
       '@ag-ui/core': 0.0.48
       '@ai-sdk/ui-utils': 1.2.11(zod@3.25.76)
       '@copilotkit/runtime': 1.54.1-next.6(5a2f2dbfe9a8d14fa49a95395e0181b7)
