@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-31T16:20:16.614Z",
+  "generated_at": "2026-03-31T16:24:12.417Z",
   "feature_registry": {
     "version": "1.0.0",
     "categories": [
@@ -796,8 +796,8 @@
       "category": "agent-framework",
       "language": "typescript",
       "logo": "/logos/langgraph-typescript.svg",
-      "description": "CopilotKit integration with LangGraph (TypeScript)",
-      "partner_docs": null,
+      "description": "TypeScript variant of the LangGraph integration. Uses @langchain/langgraph to define a graph-based agent with tool calling, shared state, and memory, connected to CopilotKit via the LangGraph AG-UI adapter.",
+      "partner_docs": "https://docs.copilotkit.ai/integrations/langgraph",
       "repo": "https://github.com/CopilotKit/CopilotKit/tree/main/showcase/packages/langgraph-typescript",
       "copilotkit_version": "2.0.0",
       "backend_url": "https://showcase-langgraph-typescript-production.up.railway.app",
@@ -806,8 +806,13 @@
         "constrained-explicit"
       ],
       "interaction_modalities": [
+        "sidebar",
         "chat"
       ],
+      "managed_platform": {
+        "name": "LangGraph Platform",
+        "url": "https://langsmith.com"
+      },
       "features": [
         "agentic-chat",
         "tool-rendering",
@@ -851,11 +856,7 @@
           ],
           "route": "/demos/gen-ui-tool-based"
         }
-      ],
-      "managed_platform": {
-        "name": "LangGraph Platform",
-        "url": "https://langsmith.com"
-      }
+      ]
     },
     {
       "name": "LlamaIndex",
