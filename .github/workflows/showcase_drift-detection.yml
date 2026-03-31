@@ -47,6 +47,12 @@ jobs:
           - slug: llamaindex
             name: "LlamaIndex"
             url: https://showcase-llamaindex-production.up.railway.app
+          - slug: langgraph-fastapi
+            name: "LangGraph (FastAPI)"
+            url: https://showcase-langgraph-fastapi-production.up.railway.app
+          - slug: langgraph-typescript
+            name: "LangGraph (TypeScript)"
+            url: https://showcase-langgraph-typescript-production.up.railway.app
 
     steps:
       - name: Checkout
