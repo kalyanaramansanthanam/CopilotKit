@@ -1,11 +1,10 @@
 # Stage 1: Build Next.js frontend
 FROM node:20-slim AS frontend
 WORKDIR /app
-RUN corepack enable
-COPY package.json pnpm-lock.yaml* ./
-RUN pnpm install --frozen-lockfile
+COPY package.json ./
+RUN npm install
 COPY . .
-RUN pnpm build
+RUN npm run build
 
 # Stage 2: Production image with Node.js + Python
 FROM python:3.12-slim AS runner
@@ -13,8 +12,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl && \
     curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
     apt-get install -y nodejs && \
-    npm install -g corepack && \
-    corepack enable && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
@@ -31,12 +28,12 @@ COPY --from=frontend /app/public ./public
 
 # Agent code
 COPY src/agent_server.py ./
-COPY src/app/demos/*/agent.py ./agents/
+COPY src/agents/ ./agents/
 
 # Entrypoint
 COPY entrypoint.sh ./
 RUN chmod +x entrypoint.sh
 
-EXPOSE 3000
+EXPOSE 10000
 ENV NODE_ENV=production
 CMD ["./entrypoint.sh"]
