@@ -292,7 +292,7 @@ jobs:
           curl -sf -X POST https://backboard.railway.com/graphql/v2 \
             -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
             -H "Content-Type: application/json" \
-            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"RAILWAY_SERVICE_ID\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
+            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"0e9c284d-8d87-4fcf-9f82-6b704d7e4bd4\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
             && echo "crewai-crews deploy triggered"
 
   build-pydantic_ai:
@@ -335,7 +335,7 @@ jobs:
           curl -sf -X POST https://backboard.railway.com/graphql/v2 \
             -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
             -H "Content-Type: application/json" \
-            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"RAILWAY_SERVICE_ID\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
+            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"0a106173-2282-4887-a994-0ca276a99d69\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
             && echo "pydantic-ai deploy triggered"
 
   build-google_adk:
@@ -378,7 +378,7 @@ jobs:
           curl -sf -X POST https://backboard.railway.com/graphql/v2 \
             -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
             -H "Content-Type: application/json" \
-            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"RAILWAY_SERVICE_ID\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
+            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"87f60507-5a3d-4b8a-9e23-2b1de85d939c\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
             && echo "google-adk deploy triggered"
 
   build-ag2:
@@ -421,7 +421,7 @@ jobs:
           curl -sf -X POST https://backboard.railway.com/graphql/v2 \
             -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
             -H "Content-Type: application/json" \
-            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"RAILWAY_SERVICE_ID\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
+            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"87f60507-5a3d-4b8a-9e23-2b1de85d939c\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
             && echo "ag2 deploy triggered"
 
   build-agno:
@@ -464,7 +464,7 @@ jobs:
           curl -sf -X POST https://backboard.railway.com/graphql/v2 \
             -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
             -H "Content-Type: application/json" \
-            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"RAILWAY_SERVICE_ID\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
+            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"32cab80b-e329-45bd-9c73-c4e1ddc94305\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
             && echo "agno deploy triggered"
 
   build-llamaindex:
@@ -507,7 +507,7 @@ jobs:
           curl -sf -X POST https://backboard.railway.com/graphql/v2 \
             -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
             -H "Content-Type: application/json" \
-            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"RAILWAY_SERVICE_ID\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
+            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"285386e8-492d-4cb8-b632-0a7d4607378f\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
             && echo "llamaindex deploy triggered"
 
   build-langgraph_fastapi:
@@ -550,7 +550,7 @@ jobs:
           curl -sf -X POST https://backboard.railway.com/graphql/v2 \
             -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
             -H "Content-Type: application/json" \
-            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"RAILWAY_SERVICE_ID\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
+            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"06cccb5c-59f4-46b5-8adc-7113e77011a4\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
             && echo "langgraph-fastapi deploy triggered"
 
   build-langgraph_typescript:
@@ -593,7 +593,7 @@ jobs:
           curl -sf -X POST https://backboard.railway.com/graphql/v2 \
             -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
             -H "Content-Type: application/json" \
-            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"RAILWAY_SERVICE_ID\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
+            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"66246d3b-a18e-46f0-be51-5f3ff7a36e5a\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
             && echo "langgraph-typescript deploy triggered"
 
   build-langroid:
@@ -636,7 +636,7 @@ jobs:
           curl -sf -X POST https://backboard.railway.com/graphql/v2 \
             -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
             -H "Content-Type: application/json" \
-            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"RAILWAY_SERVICE_ID\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
+            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"66246d3b-a18e-46f0-be51-5f3ff7a36e5a\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
             && echo "langroid deploy triggered"
 
   build-spring_ai:
@@ -679,7 +679,7 @@ jobs:
           curl -sf -X POST https://backboard.railway.com/graphql/v2 \
             -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
             -H "Content-Type: application/json" \
-            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"RAILWAY_SERVICE_ID\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
+            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"66246d3b-a18e-46f0-be51-5f3ff7a36e5a\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
             && echo "spring-ai deploy triggered"
 
   build-strands:
@@ -722,7 +722,7 @@ jobs:
           curl -sf -X POST https://backboard.railway.com/graphql/v2 \
             -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
             -H "Content-Type: application/json" \
-            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"RAILWAY_SERVICE_ID\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
+            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"92e1cfad-ad53-403f-ab2b-5ab380832232\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
             && echo "strands deploy triggered"
 
   build-ms_agent_python:
@@ -765,7 +765,7 @@ jobs:
           curl -sf -X POST https://backboard.railway.com/graphql/v2 \
             -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
             -H "Content-Type: application/json" \
-            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"RAILWAY_SERVICE_ID\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
+            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"655db75a-af8d-427d-a4f9-441570ae5003\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
             && echo "ms-agent-python deploy triggered"
 
   build-claude_sdk_typescript:
@@ -808,7 +808,7 @@ jobs:
           curl -sf -X POST https://backboard.railway.com/graphql/v2 \
             -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
             -H "Content-Type: application/json" \
-            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"RAILWAY_SERVICE_ID\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
+            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"655db75a-af8d-427d-a4f9-441570ae5003\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
             && echo "claude-sdk-typescript deploy triggered"
 
   build-ms_agent_dotnet:
@@ -851,7 +851,7 @@ jobs:
           curl -sf -X POST https://backboard.railway.com/graphql/v2 \
             -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
             -H "Content-Type: application/json" \
-            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"RAILWAY_SERVICE_ID\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
+            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"beeb2dd6-87a4-4599-aa07-0578f7bd6519\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
             && echo "ms-agent-dotnet deploy triggered"
 
   build-claude_sdk_python:
@@ -894,5 +894,5 @@ jobs:
           curl -sf -X POST https://backboard.railway.com/graphql/v2 \
             -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
             -H "Content-Type: application/json" \
-            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"RAILWAY_SERVICE_ID\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
+            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"beeb2dd6-87a4-4599-aa07-0578f7bd6519\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \
             && echo "claude-sdk-python deploy triggered"
