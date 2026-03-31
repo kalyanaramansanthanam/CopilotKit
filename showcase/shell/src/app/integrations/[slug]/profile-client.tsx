@@ -36,11 +36,13 @@ export function ProfileClient({
     featureInfos,
     categoryLabel,
     languageLabel,
+    demoAlternatives = {},
 }: {
     integration: Integration;
     featureInfos: FeatureInfo[];
     categoryLabel: string;
     languageLabel: string;
+    demoAlternatives?: Record<string, Array<{ slug: string; name: string; backendUrl: string }>>;
 }) {
     const [drawerOpen, setDrawerOpen] = useState(false);
     const [activeDemo, setActiveDemo] = useState<Demo | null>(null);
@@ -187,6 +189,7 @@ export function ProfileClient({
                     backendUrl={integration.backend_url}
                     demoRoute={activeDemo.route}
                     wide={activeDemo.id.includes("gen-ui") || activeDemo.id.includes("shared-state") || activeDemo.id.includes("subagent")}
+                    alternatives={demoAlternatives[activeDemo.id]}
                 />
             )}
         </>

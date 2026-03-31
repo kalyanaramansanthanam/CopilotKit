@@ -6,6 +6,12 @@ import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
 
+interface Alternative {
+    slug: string;
+    name: string;
+    backendUrl: string;
+}
+
 interface DemoDrawerProps {
     isOpen: boolean;
     onClose: () => void;
@@ -15,7 +21,8 @@ interface DemoDrawerProps {
     demoName: string;
     backendUrl: string;
     demoRoute: string;
-    wide?: boolean; // true for sidebar-type demos that need more space
+    wide?: boolean;
+    alternatives?: Alternative[];
 }
 
 export function DemoDrawer({
@@ -28,7 +35,18 @@ export function DemoDrawer({
     backendUrl,
     demoRoute,
     wide = false,
+    alternatives,
 }: DemoDrawerProps) {
+    const [activeBackendUrl, setActiveBackendUrl] = useState(backendUrl);
+    const [activeIntegrationName, setActiveIntegrationName] = useState(integrationName);
+    const [activeIntegrationSlug, setActiveIntegrationSlug] = useState(integrationSlug);
+
+    // Reset when a new demo is opened
+    useEffect(() => {
+        setActiveBackendUrl(backendUrl);
+        setActiveIntegrationName(integrationName);
+        setActiveIntegrationSlug(integrationSlug);
+    }, [demoId, backendUrl, integrationName, integrationSlug]);
     const [activeTab, setActiveTab] = useState<"preview" | "code" | "docs">("preview");
     const [demoContent, setDemoContent] = useState<any>(null);
 
@@ -36,13 +54,17 @@ export function DemoDrawer({
         if (isOpen && demoId) {
             import("@/data/demo-content.json").then((mod) => {
                 const content = mod.default as any;
-                const key = `${integrationSlug}::${demoId}`;
+                const key = `${activeIntegrationSlug}::${demoId}`;
                 if (content.demos[key]) {
                     setDemoContent(content.demos[key]);
+                } else {
+                    // Fallback to original integration
+                    const fallbackKey = `${integrationSlug}::${demoId}`;
+                    setDemoContent(content.demos[fallbackKey] || null);
                 }
             });
         }
-    }, [isOpen, integrationSlug, demoId]);
+    }, [isOpen, activeIntegrationSlug, integrationSlug, demoId]);
 
     // Close on ESC
     useEffect(() => {
@@ -54,7 +76,7 @@ export function DemoDrawer({
         return () => document.removeEventListener("keydown", onKeyDown);
     }, [isOpen, onClose]);
 
-    const iframeSrc = `${backendUrl}${demoRoute}`;
+    const iframeSrc = `${activeBackendUrl}${demoRoute}`;
 
     const tabs: { id: "preview" | "code" | "docs"; label: string }[] = [
         { id: "preview", label: "Preview" },
@@ -88,6 +110,39 @@ export function DemoDrawer({
                         <span className="text-[13px] font-semibold text-[var(--text)]">
                             {demoName}
                         </span>
+                        {/* Framework switcher */}
+                        {alternatives && alternatives.length > 0 ? (
+                            <select
+                                value={activeIntegrationSlug}
+                                onChange={(e) => {
+                                    const val = e.target.value;
+                                    if (val === integrationSlug) {
+                                        setActiveBackendUrl(backendUrl);
+                                        setActiveIntegrationName(integrationName);
+                                        setActiveIntegrationSlug(integrationSlug);
+                                    } else {
+                                        const alt = alternatives.find((a) => a.slug === val);
+                                        if (alt) {
+                                            setActiveBackendUrl(alt.backendUrl);
+                                            setActiveIntegrationName(alt.name);
+                                            setActiveIntegrationSlug(alt.slug);
+                                        }
+                                    }
+                                }}
+                                className="text-[10px] font-mono rounded-md border border-[var(--border)] bg-[var(--bg-elevated)] px-2 py-1 text-[var(--text-secondary)] cursor-pointer"
+                            >
+                                <option value={integrationSlug}>{integrationName}</option>
+                                {alternatives.map((alt) => (
+                                    <option key={alt.slug} value={alt.slug}>
+                                        {alt.name}
+                                    </option>
+                                ))}
+                            </select>
+                        ) : (
+                            <span className="text-[10px] font-mono text-[var(--text-muted)] bg-[var(--bg-elevated)] px-2 py-0.5 rounded">
+                                {activeIntegrationName}
+                            </span>
+                        )}
                         <span
                             className="text-[9px] font-semibold px-2 py-0.5 rounded-full"
                             style={{ background: "var(--accent-light)", color: "var(--accent)" }}
