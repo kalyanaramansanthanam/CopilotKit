@@ -53,6 +53,12 @@ jobs:
           - slug: langgraph-typescript
             name: "LangGraph (TypeScript)"
             url: https://showcase-langgraph-typescript-production.up.railway.app
+          - slug: langroid
+            name: "Langroid"
+            url: https://showcase-langroid-production.up.railway.app
+          - slug: spring-ai
+            name: "Spring AI"
+            url: https://showcase-spring-ai-production.up.railway.app
 
     steps:
       - name: Checkout

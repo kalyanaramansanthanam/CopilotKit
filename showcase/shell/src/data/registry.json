@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-31T16:24:12.417Z",
+  "generated_at": "2026-03-31T16:31:29.314Z",
   "feature_registry": {
     "version": "1.0.0",
     "categories": [
@@ -859,6 +859,69 @@
       ]
     },
     {
+      "name": "Langroid",
+      "slug": "langroid",
+      "category": "agent-framework",
+      "language": "python",
+      "logo": "/logos/langroid.svg",
+      "description": "CopilotKit integration with Langroid",
+      "partner_docs": null,
+      "repo": "https://github.com/CopilotKit/CopilotKit/tree/main/showcase/packages/langroid",
+      "copilotkit_version": "2.0.0",
+      "backend_url": "https://showcase-langroid-production.up.railway.app",
+      "deployed": false,
+      "generative_ui": [
+        "constrained-explicit"
+      ],
+      "interaction_modalities": [
+        "chat"
+      ],
+      "features": [
+        "agentic-chat",
+        "tool-rendering",
+        "hitl",
+        "gen-ui-tool-based"
+      ],
+      "demos": [
+        {
+          "id": "agentic-chat",
+          "name": "Agentic Chat",
+          "description": "Natural conversation with frontend tool execution",
+          "tags": [
+            "chat-ui"
+          ],
+          "route": "/demos/agentic-chat"
+        },
+        {
+          "id": "tool-rendering",
+          "name": "Tool Rendering",
+          "description": "Backend agent tools rendered as UI components",
+          "tags": [
+            "agent-capabilities"
+          ],
+          "route": "/demos/tool-rendering"
+        },
+        {
+          "id": "hitl",
+          "name": "Human in the Loop",
+          "description": "User approves agent actions before execution",
+          "tags": [
+            "interactivity"
+          ],
+          "route": "/demos/hitl"
+        },
+        {
+          "id": "gen-ui-tool-based",
+          "name": "Tool-Based Generative UI",
+          "description": "Agent uses tools to trigger UI generation",
+          "tags": [
+            "generative-ui"
+          ],
+          "route": "/demos/gen-ui-tool-based"
+        }
+      ]
+    },
+    {
       "name": "LlamaIndex",
       "slug": "llamaindex",
       "category": "agent-framework",
@@ -1000,6 +1063,69 @@
       "repo": "https://github.com/CopilotKit/CopilotKit/tree/main/showcase/packages/pydantic-ai",
       "copilotkit_version": "2.0.0",
       "backend_url": "https://showcase-pydantic-ai-production.up.railway.app",
+      "deployed": false,
+      "generative_ui": [
+        "constrained-explicit"
+      ],
+      "interaction_modalities": [
+        "chat"
+      ],
+      "features": [
+        "agentic-chat",
+        "tool-rendering",
+        "hitl",
+        "gen-ui-tool-based"
+      ],
+      "demos": [
+        {
+          "id": "agentic-chat",
+          "name": "Agentic Chat",
+          "description": "Natural conversation with frontend tool execution",
+          "tags": [
+            "chat-ui"
+          ],
+          "route": "/demos/agentic-chat"
+        },
+        {
+          "id": "tool-rendering",
+          "name": "Tool Rendering",
+          "description": "Backend agent tools rendered as UI components",
+          "tags": [
+            "agent-capabilities"
+          ],
+          "route": "/demos/tool-rendering"
+        },
+        {
+          "id": "hitl",
+          "name": "Human in the Loop",
+          "description": "User approves agent actions before execution",
+          "tags": [
+            "interactivity"
+          ],
+          "route": "/demos/hitl"
+        },
+        {
+          "id": "gen-ui-tool-based",
+          "name": "Tool-Based Generative UI",
+          "description": "Agent uses tools to trigger UI generation",
+          "tags": [
+            "generative-ui"
+          ],
+          "route": "/demos/gen-ui-tool-based"
+        }
+      ]
+    },
+    {
+      "name": "Spring AI",
+      "slug": "spring-ai",
+      "category": "agent-framework",
+      "language": "typescript",
+      "logo": "/logos/spring-ai.svg",
+      "description": "CopilotKit integration with Spring AI",
+      "partner_docs": null,
+      "repo": "https://github.com/CopilotKit/CopilotKit/tree/main/showcase/packages/spring-ai",
+      "copilotkit_version": "2.0.0",
+      "backend_url": "https://showcase-spring-ai-production.up.railway.app",
       "deployed": false,
       "generative_ui": [
         "constrained-explicit"
