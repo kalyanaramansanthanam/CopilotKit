@@ -43,14 +43,12 @@ export default function RootLayout({
                             >
                                 Matrix
                             </Link>
-                            <a
-                                href="https://docs.copilotkit.ai/reference"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                            <Link
+                                href="/reference"
                                 className="rounded-md px-3 py-1.5 text-[13px] font-medium text-[var(--text-muted)] hover:text-[var(--text-secondary)] hover:bg-[var(--bg-elevated)] transition-all"
                             >
                                 Reference
-                            </a>
+                            </Link>
                         </div>
                         <SearchTrigger />
                     </div>

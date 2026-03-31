@@ -2307,7 +2307,7 @@ importers:
         version: 1.1.1(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@4.104.0(encoding@0.1.13)(ws@8.19.0)(zod@3.25.76)))
       '@langchain/community':
         specifier: '>=0.3.58'
-        version: 0.3.59(99a4996b0ff5e1423a6e47592d3ee004)
+        version: 0.3.59(fa8f4afd28667e912e4c73e3db6358e4)
       '@langchain/core':
         specifier: '>=0.3.66'
         version: 1.1.27(@opentelemetry/api@1.9.0)(openai@4.104.0(encoding@0.1.13)(ws@8.19.0)(zod@3.25.76))
@@ -2776,6 +2776,364 @@ importers:
         specifier: ^3.0.5
         version: 3.2.4(@types/debug@4.1.12)(@types/node@22.19.11)(@vitest/ui@3.2.4)(jiti@2.6.1)(jsdom@26.1.0)(less@4.5.1)(lightningcss@1.30.2)(sass@1.97.2)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2)
 
+  showcase/packages/ag2:
+    dependencies:
+      '@ag-ui/client':
+        specifier: ^0.0.48
+        version: 0.0.48
+      '@copilotkit/react-core':
+        specifier: next
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+      '@copilotkit/runtime':
+        specifier: next
+        version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
+      next:
+        specifier: 15.4.10
+        version: 15.4.10(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.57.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.97.2)
+      react:
+        specifier: 19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: 19.1.0
+        version: 19.1.0(react@19.1.0)
+      zod:
+        specifier: ^3.24.0
+        version: 3.25.76
+    devDependencies:
+      '@playwright/test':
+        specifier: ^1.50.0
+        version: 1.57.0
+      '@tailwindcss/postcss':
+        specifier: ^4.0.0
+        version: 4.1.18
+      '@types/node':
+        specifier: ^22.0.0
+        version: 22.19.11
+      '@types/react':
+        specifier: ^19.1.0
+        version: 19.2.7
+      concurrently:
+        specifier: ^9.1.0
+        version: 9.2.1
+      postcss:
+        specifier: ^8.5.0
+        version: 8.5.6
+      tailwindcss:
+        specifier: ^4.0.0
+        version: 4.1.18
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.3
+
+  showcase/packages/agno:
+    dependencies:
+      '@ag-ui/client':
+        specifier: 0.0.42
+        version: 0.0.42
+      '@copilotkit/react-core':
+        specifier: next
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+      '@copilotkit/runtime':
+        specifier: next
+        version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
+      next:
+        specifier: 15.4.10
+        version: 15.4.10(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.57.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.97.2)
+      react:
+        specifier: 19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: 19.1.0
+        version: 19.1.0(react@19.1.0)
+      zod:
+        specifier: ^3.24.0
+        version: 3.25.76
+    devDependencies:
+      '@playwright/test':
+        specifier: ^1.50.0
+        version: 1.57.0
+      '@tailwindcss/postcss':
+        specifier: ^4.0.0
+        version: 4.1.18
+      '@types/node':
+        specifier: ^22.0.0
+        version: 22.19.11
+      '@types/react':
+        specifier: ^19.1.0
+        version: 19.2.7
+      concurrently:
+        specifier: ^9.1.0
+        version: 9.2.1
+      postcss:
+        specifier: ^8.5.0
+        version: 8.5.6
+      tailwindcss:
+        specifier: ^4.0.0
+        version: 4.1.18
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.3
+
+  showcase/packages/claude-sdk-python:
+    dependencies:
+      '@ag-ui/client':
+        specifier: ^0.0.48
+        version: 0.0.48
+      '@copilotkit/react-core':
+        specifier: next
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+      '@copilotkit/runtime':
+        specifier: next
+        version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
+      next:
+        specifier: 15.4.10
+        version: 15.4.10(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.57.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.97.2)
+      react:
+        specifier: 19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: 19.1.0
+        version: 19.1.0(react@19.1.0)
+      zod:
+        specifier: ^3.24.0
+        version: 3.25.76
+    devDependencies:
+      '@playwright/test':
+        specifier: ^1.50.0
+        version: 1.57.0
+      '@tailwindcss/postcss':
+        specifier: ^4.0.0
+        version: 4.1.18
+      '@types/node':
+        specifier: ^22.0.0
+        version: 22.19.11
+      '@types/react':
+        specifier: ^19.1.0
+        version: 19.2.7
+      concurrently:
+        specifier: ^9.1.0
+        version: 9.2.1
+      postcss:
+        specifier: ^8.5.0
+        version: 8.5.6
+      tailwindcss:
+        specifier: ^4.0.0
+        version: 4.1.18
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.3
+
+  showcase/packages/claude-sdk-typescript:
+    dependencies:
+      '@ag-ui/client':
+        specifier: ^0.0.48
+        version: 0.0.48
+      '@ag-ui/core':
+        specifier: ^0.0.48
+        version: 0.0.48
+      '@ag-ui/encoder':
+        specifier: ^0.0.48
+        version: 0.0.48
+      '@anthropic-ai/sdk':
+        specifier: ^0.39.0
+        version: 0.39.0(encoding@0.1.13)
+      '@copilotkit/react-core':
+        specifier: next
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+      '@copilotkit/runtime':
+        specifier: next
+        version: 1.55.0-next.7(c62e3e3bf5e9e16ae3c8d7c9c83951f7)
+      express:
+        specifier: ^4.21.0
+        version: 4.22.1
+      next:
+        specifier: 15.4.10
+        version: 15.4.10(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.57.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.97.2)
+      react:
+        specifier: 19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: 19.1.0
+        version: 19.1.0(react@19.1.0)
+      zod:
+        specifier: ^3.24.0
+        version: 3.25.76
+    devDependencies:
+      '@playwright/test':
+        specifier: ^1.50.0
+        version: 1.57.0
+      '@tailwindcss/postcss':
+        specifier: ^4.0.0
+        version: 4.1.18
+      '@types/express':
+        specifier: ^5.0.0
+        version: 5.0.6
+      '@types/node':
+        specifier: ^22.0.0
+        version: 22.19.11
+      '@types/react':
+        specifier: ^19.1.0
+        version: 19.2.7
+      concurrently:
+        specifier: ^9.1.0
+        version: 9.2.1
+      postcss:
+        specifier: ^8.5.0
+        version: 8.5.6
+      tailwindcss:
+        specifier: ^4.0.0
+        version: 4.1.18
+      tsx:
+        specifier: ^4.19.0
+        version: 4.21.0
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.3
+
+  showcase/packages/crewai-crews:
+    dependencies:
+      '@copilotkit/react-core':
+        specifier: next
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+      '@copilotkit/runtime':
+        specifier: next
+        version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
+      next:
+        specifier: 15.4.10
+        version: 15.4.10(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.57.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.97.2)
+      react:
+        specifier: 19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: 19.1.0
+        version: 19.1.0(react@19.1.0)
+      zod:
+        specifier: ^3.24.0
+        version: 3.25.76
+    devDependencies:
+      '@playwright/test':
+        specifier: ^1.50.0
+        version: 1.57.0
+      '@tailwindcss/postcss':
+        specifier: ^4.0.0
+        version: 4.1.18
+      '@types/node':
+        specifier: ^22.0.0
+        version: 22.19.11
+      '@types/react':
+        specifier: ^19.1.0
+        version: 19.2.7
+      concurrently:
+        specifier: ^9.1.0
+        version: 9.2.1
+      postcss:
+        specifier: ^8.5.0
+        version: 8.5.6
+      tailwindcss:
+        specifier: ^4.0.0
+        version: 4.1.18
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.3
+
+  showcase/packages/google-adk:
+    dependencies:
+      '@ag-ui/client':
+        specifier: 0.0.42
+        version: 0.0.42
+      '@copilotkit/react-core':
+        specifier: next
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+      '@copilotkit/runtime':
+        specifier: next
+        version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
+      next:
+        specifier: 15.4.10
+        version: 15.4.10(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.57.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.97.2)
+      react:
+        specifier: 19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: 19.1.0
+        version: 19.1.0(react@19.1.0)
+      zod:
+        specifier: ^3.24.0
+        version: 3.25.76
+    devDependencies:
+      '@playwright/test':
+        specifier: ^1.50.0
+        version: 1.57.0
+      '@tailwindcss/postcss':
+        specifier: ^4.0.0
+        version: 4.1.18
+      '@types/node':
+        specifier: ^22.0.0
+        version: 22.19.11
+      '@types/react':
+        specifier: ^19.1.0
+        version: 19.2.7
+      concurrently:
+        specifier: ^9.1.0
+        version: 9.2.1
+      postcss:
+        specifier: ^8.5.0
+        version: 8.5.6
+      tailwindcss:
+        specifier: ^4.0.0
+        version: 4.1.18
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.3
+
+  showcase/packages/langgraph-fastapi:
+    dependencies:
+      '@ag-ui/client':
+        specifier: ^0.0.48
+        version: 0.0.48
+      '@copilotkit/react-core':
+        specifier: next
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+      '@copilotkit/runtime':
+        specifier: next
+        version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
+      next:
+        specifier: 15.4.10
+        version: 15.4.10(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.57.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.97.2)
+      react:
+        specifier: 19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: 19.1.0
+        version: 19.1.0(react@19.1.0)
+      zod:
+        specifier: ^3.24.0
+        version: 3.25.76
+    devDependencies:
+      '@playwright/test':
+        specifier: ^1.50.0
+        version: 1.57.0
+      '@tailwindcss/postcss':
+        specifier: ^4.0.0
+        version: 4.1.18
+      '@types/node':
+        specifier: ^22.0.0
+        version: 22.19.11
+      '@types/react':
+        specifier: ^19.1.0
+        version: 19.2.7
+      concurrently:
+        specifier: ^9.1.0
+        version: 9.2.1
+      postcss:
+        specifier: ^8.5.0
+        version: 8.5.6
+      tailwindcss:
+        specifier: ^4.0.0
+        version: 4.1.18
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.3
+
   showcase/packages/langgraph-python:
     dependencies:
       '@copilotkit/react-core':
@@ -2784,6 +3142,165 @@ importers:
       '@copilotkit/runtime':
         specifier: next
         version: 1.54.1-next.2(5f1be68c8d8394bff5b5393099b60800)
+      next:
+        specifier: 15.4.10
+        version: 15.4.10(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.57.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.97.2)
+      react:
+        specifier: 19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: 19.1.0
+        version: 19.1.0(react@19.1.0)
+      zod:
+        specifier: ^3.24.0
+        version: 3.25.76
+    devDependencies:
+      '@playwright/test':
+        specifier: ^1.50.0
+        version: 1.57.0
+      '@tailwindcss/postcss':
+        specifier: ^4.0.0
+        version: 4.1.18
+      '@types/node':
+        specifier: ^22.0.0
+        version: 22.19.11
+      '@types/react':
+        specifier: ^19.1.0
+        version: 19.2.7
+      concurrently:
+        specifier: ^9.1.0
+        version: 9.2.1
+      postcss:
+        specifier: ^8.5.0
+        version: 8.5.6
+      tailwindcss:
+        specifier: ^4.0.0
+        version: 4.1.18
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.3
+
+  showcase/packages/langgraph-typescript:
+    dependencies:
+      '@copilotkit/react-core':
+        specifier: next
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+      '@copilotkit/runtime':
+        specifier: next
+        version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
+      '@copilotkit/sdk-js':
+        specifier: 1.51.4
+        version: 1.51.4(@ag-ui/core@0.0.48)(@langchain/community@0.3.59(7cba2d37df6bcc893d29a6c39d7c5567))(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(@langchain/langgraph@1.0.2(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod-to-json-schema@3.25.1(zod@3.25.76))(zod@3.25.76))(encoding@0.1.13)(langchain@1.2.7(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod-to-json-schema@3.25.1(zod@3.25.76)))(typescript@5.9.3)(zod@3.25.76)
+      '@langchain/core':
+        specifier: ^1.0.1
+        version: 1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76))
+      '@langchain/langgraph':
+        specifier: 1.0.2
+        version: 1.0.2(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod-to-json-schema@3.25.1(zod@3.25.76))(zod@3.25.76)
+      '@langchain/langgraph-checkpoint':
+        specifier: 1.0.0
+        version: 1.0.0(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))
+      '@langchain/openai':
+        specifier: ^1.1.3
+        version: 1.2.9(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(ws@8.19.0)
+      next:
+        specifier: 15.4.10
+        version: 15.4.10(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.57.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.97.2)
+      react:
+        specifier: 19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: 19.1.0
+        version: 19.1.0(react@19.1.0)
+      zod:
+        specifier: ^3.24.0
+        version: 3.25.76
+    devDependencies:
+      '@playwright/test':
+        specifier: ^1.50.0
+        version: 1.57.0
+      '@tailwindcss/postcss':
+        specifier: ^4.0.0
+        version: 4.1.18
+      '@types/node':
+        specifier: ^22.0.0
+        version: 22.19.11
+      '@types/react':
+        specifier: ^19.1.0
+        version: 19.2.7
+      concurrently:
+        specifier: ^9.1.0
+        version: 9.2.1
+      postcss:
+        specifier: ^8.5.0
+        version: 8.5.6
+      tailwindcss:
+        specifier: ^4.0.0
+        version: 4.1.18
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.3
+
+  showcase/packages/langroid:
+    dependencies:
+      '@ag-ui/client':
+        specifier: ^0.0.48
+        version: 0.0.48
+      '@copilotkit/react-core':
+        specifier: next
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+      '@copilotkit/runtime':
+        specifier: next
+        version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
+      next:
+        specifier: 15.4.10
+        version: 15.4.10(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.57.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.97.2)
+      react:
+        specifier: 19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: 19.1.0
+        version: 19.1.0(react@19.1.0)
+      zod:
+        specifier: ^3.24.0
+        version: 3.25.76
+    devDependencies:
+      '@playwright/test':
+        specifier: ^1.50.0
+        version: 1.57.0
+      '@tailwindcss/postcss':
+        specifier: ^4.0.0
+        version: 4.1.18
+      '@types/node':
+        specifier: ^22.0.0
+        version: 22.19.11
+      '@types/react':
+        specifier: ^19.1.0
+        version: 19.2.7
+      concurrently:
+        specifier: ^9.1.0
+        version: 9.2.1
+      postcss:
+        specifier: ^8.5.0
+        version: 8.5.6
+      tailwindcss:
+        specifier: ^4.0.0
+        version: 4.1.18
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.3
+
+  showcase/packages/llamaindex:
+    dependencies:
+      '@ag-ui/client':
+        specifier: ^0.0.48
+        version: 0.0.48
+      '@copilotkit/react-core':
+        specifier: next
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+      '@copilotkit/runtime':
+        specifier: next
+        version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
       next:
         specifier: 15.4.10
         version: 15.4.10(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.57.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.97.2)
@@ -2835,7 +3352,7 @@ importers:
         version: 2.0.101(zod@3.25.76)
       '@copilotkit/react-core':
         specifier: next
-        version: 1.54.1-next.6(@ag-ui/core@0.0.48)(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+        version: 1.54.1-next.6(@ag-ui/core@0.0.48)(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
       '@copilotkit/runtime':
         specifier: next
         version: 1.54.1-next.6(5a2f2dbfe9a8d14fa49a95395e0181b7)
@@ -2895,6 +3412,248 @@ importers:
         specifier: ^5.7.0
         version: 5.9.3
 
+  showcase/packages/ms-agent-dotnet:
+    dependencies:
+      '@ag-ui/client':
+        specifier: ^0.0.48
+        version: 0.0.48
+      '@copilotkit/react-core':
+        specifier: next
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+      '@copilotkit/runtime':
+        specifier: next
+        version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
+      next:
+        specifier: 15.4.10
+        version: 15.4.10(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.57.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.97.2)
+      react:
+        specifier: 19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: 19.1.0
+        version: 19.1.0(react@19.1.0)
+      zod:
+        specifier: ^3.24.0
+        version: 3.25.76
+    devDependencies:
+      '@playwright/test':
+        specifier: ^1.50.0
+        version: 1.57.0
+      '@tailwindcss/postcss':
+        specifier: ^4.0.0
+        version: 4.1.18
+      '@types/node':
+        specifier: ^22.0.0
+        version: 22.19.11
+      '@types/react':
+        specifier: ^19.1.0
+        version: 19.2.7
+      concurrently:
+        specifier: ^9.1.0
+        version: 9.2.1
+      postcss:
+        specifier: ^8.5.0
+        version: 8.5.6
+      tailwindcss:
+        specifier: ^4.0.0
+        version: 4.1.18
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.3
+
+  showcase/packages/ms-agent-python:
+    dependencies:
+      '@ag-ui/client':
+        specifier: ^0.0.48
+        version: 0.0.48
+      '@copilotkit/react-core':
+        specifier: next
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+      '@copilotkit/runtime':
+        specifier: next
+        version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
+      next:
+        specifier: 15.4.10
+        version: 15.4.10(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.57.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.97.2)
+      react:
+        specifier: 19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: 19.1.0
+        version: 19.1.0(react@19.1.0)
+      zod:
+        specifier: ^3.24.0
+        version: 3.25.76
+    devDependencies:
+      '@playwright/test':
+        specifier: ^1.50.0
+        version: 1.57.0
+      '@tailwindcss/postcss':
+        specifier: ^4.0.0
+        version: 4.1.18
+      '@types/node':
+        specifier: ^22.0.0
+        version: 22.19.11
+      '@types/react':
+        specifier: ^19.1.0
+        version: 19.2.7
+      concurrently:
+        specifier: ^9.1.0
+        version: 9.2.1
+      postcss:
+        specifier: ^8.5.0
+        version: 8.5.6
+      tailwindcss:
+        specifier: ^4.0.0
+        version: 4.1.18
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.3
+
+  showcase/packages/pydantic-ai:
+    dependencies:
+      '@ag-ui/client':
+        specifier: ^0.0.48
+        version: 0.0.48
+      '@copilotkit/react-core':
+        specifier: next
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+      '@copilotkit/runtime':
+        specifier: next
+        version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
+      next:
+        specifier: 15.4.10
+        version: 15.4.10(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.57.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.97.2)
+      react:
+        specifier: 19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: 19.1.0
+        version: 19.1.0(react@19.1.0)
+      zod:
+        specifier: ^3.24.0
+        version: 3.25.76
+    devDependencies:
+      '@playwright/test':
+        specifier: ^1.50.0
+        version: 1.57.0
+      '@tailwindcss/postcss':
+        specifier: ^4.0.0
+        version: 4.1.18
+      '@types/node':
+        specifier: ^22.0.0
+        version: 22.19.11
+      '@types/react':
+        specifier: ^19.1.0
+        version: 19.2.7
+      concurrently:
+        specifier: ^9.1.0
+        version: 9.2.1
+      postcss:
+        specifier: ^8.5.0
+        version: 8.5.6
+      tailwindcss:
+        specifier: ^4.0.0
+        version: 4.1.18
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.3
+
+  showcase/packages/spring-ai:
+    dependencies:
+      '@ag-ui/client':
+        specifier: ^0.0.48
+        version: 0.0.48
+      '@copilotkit/react-core':
+        specifier: next
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+      '@copilotkit/runtime':
+        specifier: next
+        version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
+      next:
+        specifier: 15.4.10
+        version: 15.4.10(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.57.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.97.2)
+      react:
+        specifier: 19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: 19.1.0
+        version: 19.1.0(react@19.1.0)
+      zod:
+        specifier: ^3.24.0
+        version: 3.25.76
+    devDependencies:
+      '@playwright/test':
+        specifier: ^1.50.0
+        version: 1.57.0
+      '@tailwindcss/postcss':
+        specifier: ^4.0.0
+        version: 4.1.18
+      '@types/node':
+        specifier: ^22.0.0
+        version: 22.19.11
+      '@types/react':
+        specifier: ^19.1.0
+        version: 19.2.7
+      postcss:
+        specifier: ^8.5.0
+        version: 8.5.6
+      tailwindcss:
+        specifier: ^4.0.0
+        version: 4.1.18
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.3
+
+  showcase/packages/strands:
+    dependencies:
+      '@ag-ui/client':
+        specifier: ^0.0.48
+        version: 0.0.48
+      '@copilotkit/react-core':
+        specifier: next
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+      '@copilotkit/runtime':
+        specifier: next
+        version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
+      next:
+        specifier: 15.4.10
+        version: 15.4.10(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.57.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.97.2)
+      react:
+        specifier: 19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: 19.1.0
+        version: 19.1.0(react@19.1.0)
+      zod:
+        specifier: ^3.24.0
+        version: 3.25.76
+    devDependencies:
+      '@playwright/test':
+        specifier: ^1.50.0
+        version: 1.57.0
+      '@tailwindcss/postcss':
+        specifier: ^4.0.0
+        version: 4.1.18
+      '@types/node':
+        specifier: ^22.0.0
+        version: 22.19.11
+      '@types/react':
+        specifier: ^19.1.0
+        version: 19.2.7
+      concurrently:
+        specifier: ^9.1.0
+        version: 9.2.1
+      postcss:
+        specifier: ^8.5.0
+        version: 8.5.6
+      tailwindcss:
+        specifier: ^4.0.0
+        version: 4.1.18
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.3
+
   showcase/scripts:
     dependencies:
       ajv:
@@ -2930,13 +3689,13 @@ importers:
     dependencies:
       '@copilotkit/react-core':
         specifier: next
-        version: 1.54.1-next.6(@ag-ui/core@0.0.48)(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+        version: 1.54.1-next.6(@ag-ui/core@0.0.48)(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
       '@copilotkitnext/agent':
         specifier: next
         version: 1.54.1-next.6(@cfworker/json-schema@4.1.1)
       '@copilotkitnext/react':
         specifier: next
-        version: 1.54.1-next.6(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)
+        version: 1.54.1-next.6(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@copilotkitnext/runtime':
         specifier: next
         version: 1.54.1-next.6(@ag-ui/client@0.0.48)(@ag-ui/core@0.0.48)(@ag-ui/encoder@0.0.48)(@cfworker/json-schema@4.1.1)(@copilotkitnext/shared@1.54.1-next.6)(zod@3.25.76)
@@ -2949,6 +3708,9 @@ importers:
       next:
         specifier: 15.4.10
         version: 15.4.10(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.57.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.97.2)
+      next-mdx-remote:
+        specifier: ^5.0.0
+        version: 5.0.0(@types/react@19.2.7)(react@19.1.0)
       react:
         specifier: 19.1.0
         version: 19.1.0
@@ -3429,6 +4191,9 @@ packages:
 
   '@anthropic-ai/sdk@0.27.3':
     resolution: {integrity: sha512-IjLt0gd3L4jlOfilxVXTifn42FnVffMgDC04RJK1KDZpmkBWLv0XC92MVVmkxrFZNS/7l3xWgP/I3nqtX1sQHw==}
+
+  '@anthropic-ai/sdk@0.39.0':
+    resolution: {integrity: sha512-eMyDIPRZbt1CCLErRCi3exlAvNkBtRe+kW5vvJyef93PmNr/clstYgHhtvmkxN82nlKgzyGPCyGxrm0JQ1ZIdg==}
 
   '@anthropic-ai/sdk@0.57.0':
     resolution: {integrity: sha512-z5LMy0MWu0+w2hflUgj4RlJr1R+0BxKXL7ldXTO8FasU8fu599STghO+QKwId2dAD0d464aHtU+ChWuRHw4FNw==}
@@ -4764,6 +5529,16 @@ packages:
       react: 19.1.0
       react-dom: 19.1.0
 
+  '@copilotkit/a2ui-renderer@1.55.0-next.7':
+    resolution: {integrity: sha512-F3X7rJwJdO1ToabT5cpmaoDEySYgA4lZcefbjIN89zxa+kG29vBlFm5UZxmjw6LDqWNwoIbklnDKSM5X8BBdcQ==}
+    peerDependencies:
+      react: 19.1.0
+      react-dom: 19.1.0
+
+  '@copilotkit/core@1.55.0-next.7':
+    resolution: {integrity: sha512-rDnUxGtAPjGt+RnYCAfixGTw0EAonD/v2fq+VlV6sdsZHyx53J6DzL7AlHjx9CyVwZtgIrMAsse6ET5WVrNo4A==}
+    engines: {node: '>=18'}
+
   '@copilotkit/license-verifier@0.0.1-a1':
     resolution: {integrity: sha512-eTsupi14qPwDhpQBrFC6t4U5rxmHo9nPaHz60gOBPPCu7tTcA8GwEq5QfX/XGfmmKbCX2noL9yto1Pg0A8qQ9g==}
 
@@ -4781,6 +5556,13 @@ packages:
       react-dom: 19.1.0
       zod: '>=3.0.0'
 
+  '@copilotkit/react-core@1.55.0-next.7':
+    resolution: {integrity: sha512-G33lhgWN9Y9iiQIiRrF0w/lxKskzetdVCPqHjB5tb9ozV2ZZ3lJmDlEmr5jfTQvTI0Yy/wNWxvHCXLsvi7ttvg==}
+    peerDependencies:
+      react: 19.1.0
+      react-dom: 19.1.0
+      zod: '>=3.0.0'
+
   '@copilotkit/runtime-client-gql@1.54.1-next.2':
     resolution: {integrity: sha512-jifpduvutPOB+DlcO74+3Nwr4dcn1MVC3YXF3HtN9QqzRv92wirb2iXAnk6xc2ZU1OZRIlENuqPGjFy48reaoA==}
     peerDependencies:
@@ -4788,6 +5570,11 @@ packages:
 
   '@copilotkit/runtime-client-gql@1.54.1-next.6':
     resolution: {integrity: sha512-vt+TWmSCIWYNazercZF7jkm8SD8srwWj3As3ZjjEQtlaXbGP+L7p69QBRXjNcIrZQee8qdbPYWRAxjEA8HAy6A==}
+    peerDependencies:
+      react: 19.1.0
+
+  '@copilotkit/runtime-client-gql@1.55.0-next.7':
+    resolution: {integrity: sha512-XXa0khJxh/DlWT5pGUhUFZn5kk7Ul7Yn9XkeVpcE0zU2Mb3EegLADmMULGGvbd9WzKD8XnklbeZX2wag3kUXUA==}
     peerDependencies:
       react: 19.1.0
 
@@ -4851,6 +5638,51 @@ packages:
       langchain:
         optional: true
 
+  '@copilotkit/runtime@1.55.0-next.7':
+    resolution: {integrity: sha512-PbJ5+cEHGlnNoTXiI35zqIcX/iUv55E1Ihd0DZRdB3s8h9cLi2TsETeqWWvQ3iideeOX/vF/cgR+/0olKMQYcA==}
+    peerDependencies:
+      '@anthropic-ai/sdk': ^0.57.0
+      '@langchain/aws': '>=0.1.9'
+      '@langchain/community': '>=0.3.58'
+      '@langchain/core': '>=0.3.66'
+      '@langchain/google-gauth': '>=0.1.0'
+      '@langchain/langgraph-sdk': '>=0.1.2'
+      '@langchain/openai': '>=0.4.2'
+      groq-sdk: '>=0.3.0 <1.0.0'
+      langchain: '>=0.3.3'
+    peerDependenciesMeta:
+      '@anthropic-ai/sdk':
+        optional: true
+      '@langchain/aws':
+        optional: true
+      '@langchain/community':
+        optional: true
+      '@langchain/google-gauth':
+        optional: true
+      '@langchain/langgraph-sdk':
+        optional: true
+      '@langchain/openai':
+        optional: true
+      groq-sdk:
+        optional: true
+      langchain:
+        optional: true
+
+  '@copilotkit/sdk-js@1.51.4':
+    resolution: {integrity: sha512-GTwN0nsdUww5lZzWSS2haSSqdrKqZZbIxp3V+sAOfIEVTMJY552At1XmoOpLz+UiRbv9Mk21UJ5yghlFOIHh0g==}
+    peerDependencies:
+      '@langchain/community': ^0.3.58
+      '@langchain/core': '>=0.4.0 <2.0.0'
+      '@langchain/langgraph': '>=0.4.0 <2.0.0'
+      langchain: '>=1.0.0'
+      typescript: ^5.2.3
+      zod: ^3.23.3 || ^3.24.0 || ^3.25.0
+
+  '@copilotkit/shared@1.51.4':
+    resolution: {integrity: sha512-njIHsNGeH1AtrLBnqTup3GwGyBosg3VQEmAnxEs6JVNkvVfWxJO9OfVziPBnwZT5cXnMFkpo8zhfT5WSKllXLQ==}
+    peerDependencies:
+      '@ag-ui/core': ^0.0.43
+
   '@copilotkit/shared@1.54.1-next.2':
     resolution: {integrity: sha512-KP+6MxcRi0ABSVXPmRyzZJJTD2YoIlh45Kr7ddojBO30BvDrv0M8q0rUr9RF1S2kOQzi57AYVUrrV7juB0jvcQ==}
     peerDependencies:
@@ -4860,6 +5692,15 @@ packages:
     resolution: {integrity: sha512-5bVlr32sPFazBnIjMNnigiu0ll2ZMhgg/XpaGSUXWwZsoHfDV7MyhvSrO2k5QCbtKQHaYjussD8gEKLNr6PVmg==}
     peerDependencies:
       '@ag-ui/core': ^0.0.48
+
+  '@copilotkit/shared@1.55.0-next.7':
+    resolution: {integrity: sha512-aXa4QWIBWh54GuH+O2Julh/XmCOzn3EphaTfeK5xPFKi2UudDFbwQ532B3zhTVd8Du0/RUb39YBY90lSNjIqGQ==}
+    peerDependencies:
+      '@ag-ui/core': ^0.0.48
+
+  '@copilotkit/web-inspector@1.55.0-next.7':
+    resolution: {integrity: sha512-KMXJw2jMBD3HNamcKDuBbDE6QI0/Td9saUSbqfJ5RIRpXQJXr8tOhi9HOfMcMRRecJFiLHaaIf7oTZ5jqEZFEw==}
+    engines: {node: '>=18'}
 
   '@copilotkitnext/agent@1.54.1-next.2':
     resolution: {integrity: sha512-r1vw7bTCVx0Od/TQ28GoxPME6sDg2SDK3tKmccYCCPpmsMJnmerWTFczwp4uDB64Va1rs5u0EaLpcf8gJay9Zw==}
@@ -7581,6 +8422,20 @@ packages:
       react-dom:
         optional: true
 
+  '@langchain/langgraph-sdk@1.0.3':
+    resolution: {integrity: sha512-6M4i0XsVO5Eb2vv/3OtIPHW3UqO4zYyXl6AOfS0Jf6d7JiWiSXqzLN8UoS0hpu1ItkcW1j575CRiP/6jn6XXFg==}
+    peerDependencies:
+      '@langchain/core': ^1.0.1
+      react: 19.1.0
+      react-dom: 19.1.0
+    peerDependenciesMeta:
+      '@langchain/core':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+
   '@langchain/langgraph-sdk@1.4.5':
     resolution: {integrity: sha512-suG98WbIUIgfz4bik62ACIDRqGbaOV+4iMCL1T73G+E7nkoE67qB0n/Ljm1hImJdnQZh06pC7HKPGLhZW9tHhg==}
     peerDependencies:
@@ -7614,6 +8469,17 @@ packages:
     resolution: {integrity: sha512-4CbSihxZDUrB9dzoUFfameEzTngN2bGrkMq7F9UhXMzevxv4x0ErJO2ZpjnC83tK4R0LeWdq2itfj+uVsOBO4A==}
     engines: {node: ^18.19.0 || >=20.16.0}
     hasBin: true
+
+  '@langchain/langgraph@1.0.2':
+    resolution: {integrity: sha512-syxzzWTnmpCL+RhUEvalUeOXFoZy/KkzHa2Da2gKf18zsf9Dkbh3rfnRDrTyUGS1XSTejq07s4rg1qntdEDs2A==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@langchain/core': ^1.0.1
+      zod: ^3.25.32 || ^4.1.0
+      zod-to-json-schema: ^3.x
+    peerDependenciesMeta:
+      zod-to-json-schema:
+        optional: true
 
   '@langchain/langgraph@1.1.5':
     resolution: {integrity: sha512-uJC/asydf/GoHpo9x42lf9hs8ufCkMuJ9sDle5ybP7sMD0XryOfE0E4J3deARk9ZadCCt6zeCoCNu/mTbx8+Sg==}
@@ -18001,6 +18867,12 @@ packages:
       react: 19.1.0
       react-dom: 19.1.0
 
+  next-mdx-remote@5.0.0:
+    resolution: {integrity: sha512-RNNbqRpK9/dcIFZs/esQhuLA8jANqlH694yqoDBK8hkVdJUndzzGmnPHa2nyi90N4Z9VmzuSWNRpr5ItT3M7xQ==}
+    engines: {node: '>=14', npm: '>=7'}
+    peerDependencies:
+      react: 19.1.0
+
   next-themes@0.2.1:
     resolution: {integrity: sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==}
     peerDependencies:
@@ -21520,6 +22392,9 @@ packages:
   unist-util-remove-position@5.0.0:
     resolution: {integrity: sha512-Hp5Kh3wLxv0PHj9m2yZhhLt58KzPtEYKQQ4yxfYFEO7EvHwzyDYnduhHnY1mDxoqr7VUwVuHXk9RXKIiYS1N8Q==}
 
+  unist-util-remove@3.1.1:
+    resolution: {integrity: sha512-kfCqZK5YVY5yEa89tvpl7KnBBHu2c6CzMkqHUrlOqaRgGOMp0sMvwWOVrbAtj03KhovQB7i96Gda72v/EFE0vw==}
+
   unist-util-remove@4.0.0:
     resolution: {integrity: sha512-b4gokeGId57UVRX/eVKej5gXqGlc9+trkORhFJpu9raqZkZhU0zm8Doi05+HaiBsMEIJowL+2WtQ5ItjsngPXg==}
 
@@ -23499,6 +24374,18 @@ snapshots:
       tinyexec: 1.0.2
 
   '@anthropic-ai/sdk@0.27.3(encoding@0.1.13)':
+    dependencies:
+      '@types/node': 18.19.130
+      '@types/node-fetch': 2.6.13
+      abort-controller: 3.0.0
+      agentkeepalive: 4.6.0
+      form-data-encoder: 1.7.2
+      formdata-node: 4.4.1
+      node-fetch: 2.7.0(encoding@0.1.13)
+    transitivePeerDependencies:
+      - encoding
+
+  '@anthropic-ai/sdk@0.39.0(encoding@0.1.13)':
     dependencies:
       '@types/node': 18.19.130
       '@types/node-fetch': 2.6.13
@@ -26742,7 +27629,7 @@ snapshots:
     transitivePeerDependencies:
       - signal-polyfill
 
-  '@copilotkit/a2ui-renderer@1.54.1-next.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)':
+  '@copilotkit/a2ui-renderer@1.54.1-next.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@a2ui/lit': 0.8.1(signal-polyfill@0.2.2)
       clsx: 2.1.1
@@ -26752,6 +27639,29 @@ snapshots:
       zod: 3.25.76
     transitivePeerDependencies:
       - signal-polyfill
+
+  '@copilotkit/a2ui-renderer@1.55.0-next.7(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)':
+    dependencies:
+      '@a2ui/lit': 0.8.1(signal-polyfill@0.2.2)
+      clsx: 2.1.1
+      markdown-it: 14.1.0
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      zod: 3.25.76
+    transitivePeerDependencies:
+      - signal-polyfill
+
+  '@copilotkit/core@1.55.0-next.7(@ag-ui/core@0.0.48)(encoding@0.1.13)(zod@3.25.76)':
+    dependencies:
+      '@ag-ui/client': 0.0.48
+      '@copilotkit/shared': 1.55.0-next.7(@ag-ui/core@0.0.48)(encoding@0.1.13)
+      phoenix: 1.8.5
+      rxjs: 7.8.1
+      zod-to-json-schema: 3.25.1(zod@3.25.76)
+    transitivePeerDependencies:
+      - '@ag-ui/core'
+      - encoding
+      - zod
 
   '@copilotkit/license-verifier@0.0.1-a1': {}
 
@@ -26780,13 +27690,13 @@ snapshots:
       - signal-polyfill
       - supports-color
 
-  '@copilotkit/react-core@1.54.1-next.6(@ag-ui/core@0.0.48)(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)':
+  '@copilotkit/react-core@1.54.1-next.6(@ag-ui/core@0.0.48)(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)':
     dependencies:
       '@ag-ui/client': 0.0.48
       '@copilotkit/runtime-client-gql': 1.54.1-next.6(@ag-ui/core@0.0.48)(encoding@0.1.13)(graphql@16.12.0)(react@19.1.0)
       '@copilotkit/shared': 1.54.1-next.6(@ag-ui/core@0.0.48)(encoding@0.1.13)
       '@copilotkitnext/core': 1.54.1-next.6(zod@3.25.76)
-      '@copilotkitnext/react': 1.54.1-next.6(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)
+      '@copilotkitnext/react': 1.54.1-next.6(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@scarf/scarf': 1.4.0
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
@@ -26795,6 +27705,46 @@ snapshots:
       zod: 3.25.76
     transitivePeerDependencies:
       - '@ag-ui/core'
+      - '@types/mdast'
+      - '@types/react'
+      - '@types/react-dom'
+      - encoding
+      - graphql
+      - micromark
+      - micromark-util-types
+      - signal-polyfill
+      - supports-color
+
+  '@copilotkit/react-core@1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)':
+    dependencies:
+      '@ag-ui/client': 0.0.48
+      '@ag-ui/core': 0.0.48
+      '@copilotkit/a2ui-renderer': 1.55.0-next.7(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)
+      '@copilotkit/core': 1.55.0-next.7(@ag-ui/core@0.0.48)(encoding@0.1.13)(zod@3.25.76)
+      '@copilotkit/runtime-client-gql': 1.55.0-next.7(@ag-ui/core@0.0.48)(encoding@0.1.13)(graphql@16.12.0)(react@19.1.0)
+      '@copilotkit/shared': 1.55.0-next.7(@ag-ui/core@0.0.48)(encoding@0.1.13)
+      '@copilotkit/web-inspector': 1.55.0-next.7(@ag-ui/core@0.0.48)(encoding@0.1.13)(zod@3.25.76)
+      '@lit-labs/react': 2.1.3(@types/react@19.2.7)
+      '@radix-ui/react-dropdown-menu': 2.1.16(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@radix-ui/react-slot': 1.2.4(@types/react@19.2.7)(react@19.1.0)
+      '@radix-ui/react-tooltip': 1.2.8(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@scarf/scarf': 1.4.0
+      class-variance-authority: 0.7.1
+      clsx: 2.1.1
+      katex: 0.16.27
+      lucide-react: 0.525.0(react@19.1.0)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      react-markdown: 8.0.7(@types/react@19.2.7)(react@19.1.0)
+      rxjs: 7.8.1
+      streamdown: 1.6.11(@types/mdast@4.0.4)(micromark-util-types@2.0.2)(micromark@4.0.2)(react@19.1.0)
+      tailwind-merge: 3.4.0
+      ts-deepmerge: 7.0.3
+      tw-animate-css: 1.4.0
+      untruncate-json: 0.0.1
+      use-stick-to-bottom: 1.1.1(react@19.1.0)
+      zod: 3.25.76
+    transitivePeerDependencies:
       - '@types/mdast'
       - '@types/react'
       - '@types/react-dom'
@@ -26820,6 +27770,18 @@ snapshots:
   '@copilotkit/runtime-client-gql@1.54.1-next.6(@ag-ui/core@0.0.48)(encoding@0.1.13)(graphql@16.12.0)(react@19.1.0)':
     dependencies:
       '@copilotkit/shared': 1.54.1-next.6(@ag-ui/core@0.0.48)(encoding@0.1.13)
+      '@urql/core': 5.2.0(graphql@16.12.0)
+      react: 19.1.0
+      untruncate-json: 0.0.1
+      urql: 4.2.2(@urql/core@5.2.0(graphql@16.12.0))(react@19.1.0)
+    transitivePeerDependencies:
+      - '@ag-ui/core'
+      - encoding
+      - graphql
+
+  '@copilotkit/runtime-client-gql@1.55.0-next.7(@ag-ui/core@0.0.48)(encoding@0.1.13)(graphql@16.12.0)(react@19.1.0)':
+    dependencies:
+      '@copilotkit/shared': 1.55.0-next.7(@ag-ui/core@0.0.48)(encoding@0.1.13)
       '@urql/core': 5.2.0(graphql@16.12.0)
       react: 19.1.0
       untruncate-json: 0.0.1
@@ -26937,6 +27899,150 @@ snapshots:
       - ws
       - zod-to-json-schema
 
+  '@copilotkit/runtime@1.55.0-next.7(c62e3e3bf5e9e16ae3c8d7c9c83951f7)':
+    dependencies:
+      '@ag-ui/a2ui-middleware': 0.0.2(@ag-ui/client@0.0.48)(rxjs@7.8.1)
+      '@ag-ui/client': 0.0.48
+      '@ag-ui/core': 0.0.48
+      '@ag-ui/encoder': 0.0.47
+      '@ag-ui/langgraph': 0.0.25(@ag-ui/client@0.0.48)(@ag-ui/core@0.0.48)(@opentelemetry/api@1.9.0)(openai@4.104.0(encoding@0.1.13)(ws@8.19.0)(zod@3.25.76))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod-to-json-schema@3.25.1(zod@3.25.76))
+      '@ag-ui/mcp-apps-middleware': 0.0.2(@ag-ui/client@0.0.48)(@cfworker/json-schema@4.1.1)(hono@4.12.9)(rxjs@7.8.1)(zod@3.25.76)
+      '@ai-sdk/anthropic': 3.0.58(zod@3.25.76)
+      '@ai-sdk/google': 3.0.43(zod@3.25.76)
+      '@ai-sdk/google-vertex': 3.0.113(zod@3.25.76)
+      '@ai-sdk/mcp': 1.0.25(zod@3.25.76)
+      '@ai-sdk/openai': 3.0.41(zod@3.25.76)
+      '@copilotkit/shared': 1.55.0-next.7(@ag-ui/core@0.0.48)(encoding@0.1.13)
+      '@graphql-yoga/plugin-defer-stream': 3.18.0(graphql-yoga@5.18.0(graphql@16.12.0))(graphql@16.12.0)
+      '@hono/node-server': 1.19.11(hono@4.12.9)
+      '@langchain/core': 1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76))
+      '@modelcontextprotocol/sdk': 1.28.0(@cfworker/json-schema@4.1.1)(zod@3.25.76)
+      '@scarf/scarf': 1.4.0
+      ai: 6.0.116(zod@3.25.76)
+      class-transformer: 0.5.1
+      class-validator: 0.14.3
+      cors: 2.8.5
+      express: 4.22.1
+      graphql: 16.12.0
+      graphql-scalars: 1.25.0(graphql@16.12.0)
+      graphql-yoga: 5.18.0(graphql@16.12.0)
+      hono: 4.12.9
+      openai: 4.104.0(encoding@0.1.13)(ws@8.19.0)(zod@3.25.76)
+      partial-json: 0.1.7
+      phoenix: 1.8.5
+      pino: 10.1.1
+      pino-pretty: 11.3.0
+      reflect-metadata: 0.2.2
+      rxjs: 7.8.1
+      type-graphql: 2.0.0-rc.1(class-validator@0.14.3)(graphql-scalars@1.25.0(graphql@16.12.0))(graphql@16.12.0)
+      ws: 8.19.0
+      zod: 3.25.76
+    optionalDependencies:
+      '@anthropic-ai/sdk': 0.39.0(encoding@0.1.13)
+      '@langchain/aws': 1.1.1(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))
+      '@langchain/community': 0.3.59(64a7126ce67c4d34fde640c6ea273195)
+      '@langchain/google-gauth': 0.1.8(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(encoding@0.1.13)(zod@3.25.76)
+      '@langchain/langgraph-sdk': 2.0.0(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@langchain/openai': 1.2.9(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(ws@8.19.0)
+      groq-sdk: 0.5.0(encoding@0.1.13)
+      langchain: 1.2.7(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod-to-json-schema@3.25.1(zod@3.25.76))
+    transitivePeerDependencies:
+      - '@cfworker/json-schema'
+      - '@opentelemetry/api'
+      - '@opentelemetry/exporter-trace-otlp-proto'
+      - '@opentelemetry/sdk-trace-base'
+      - bufferutil
+      - encoding
+      - react
+      - react-dom
+      - supports-color
+      - utf-8-validate
+      - zod-to-json-schema
+
+  '@copilotkit/runtime@1.55.0-next.7(ec644475677b29718be06ae064943166)':
+    dependencies:
+      '@ag-ui/a2ui-middleware': 0.0.2(@ag-ui/client@0.0.48)(rxjs@7.8.1)
+      '@ag-ui/client': 0.0.48
+      '@ag-ui/core': 0.0.48
+      '@ag-ui/encoder': 0.0.47
+      '@ag-ui/langgraph': 0.0.25(@ag-ui/client@0.0.48)(@ag-ui/core@0.0.48)(@opentelemetry/api@1.9.0)(openai@4.104.0(encoding@0.1.13)(ws@8.19.0)(zod@3.25.76))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod-to-json-schema@3.25.1(zod@3.25.76))
+      '@ag-ui/mcp-apps-middleware': 0.0.2(@ag-ui/client@0.0.48)(@cfworker/json-schema@4.1.1)(hono@4.12.9)(rxjs@7.8.1)(zod@3.25.76)
+      '@ai-sdk/anthropic': 3.0.58(zod@3.25.76)
+      '@ai-sdk/google': 3.0.43(zod@3.25.76)
+      '@ai-sdk/google-vertex': 3.0.113(zod@3.25.76)
+      '@ai-sdk/mcp': 1.0.25(zod@3.25.76)
+      '@ai-sdk/openai': 3.0.41(zod@3.25.76)
+      '@copilotkit/shared': 1.55.0-next.7(@ag-ui/core@0.0.48)(encoding@0.1.13)
+      '@graphql-yoga/plugin-defer-stream': 3.18.0(graphql-yoga@5.18.0(graphql@16.12.0))(graphql@16.12.0)
+      '@hono/node-server': 1.19.11(hono@4.12.9)
+      '@langchain/core': 1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76))
+      '@modelcontextprotocol/sdk': 1.28.0(@cfworker/json-schema@4.1.1)(zod@3.25.76)
+      '@scarf/scarf': 1.4.0
+      ai: 6.0.116(zod@3.25.76)
+      class-transformer: 0.5.1
+      class-validator: 0.14.3
+      cors: 2.8.5
+      express: 4.22.1
+      graphql: 16.12.0
+      graphql-scalars: 1.25.0(graphql@16.12.0)
+      graphql-yoga: 5.18.0(graphql@16.12.0)
+      hono: 4.12.9
+      openai: 4.104.0(encoding@0.1.13)(ws@8.19.0)(zod@3.25.76)
+      partial-json: 0.1.7
+      phoenix: 1.8.5
+      pino: 10.1.1
+      pino-pretty: 11.3.0
+      reflect-metadata: 0.2.2
+      rxjs: 7.8.1
+      type-graphql: 2.0.0-rc.1(class-validator@0.14.3)(graphql-scalars@1.25.0(graphql@16.12.0))(graphql@16.12.0)
+      ws: 8.19.0
+      zod: 3.25.76
+    optionalDependencies:
+      '@anthropic-ai/sdk': 0.57.0
+      '@langchain/aws': 1.1.1(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))
+      '@langchain/community': 0.3.59(64a7126ce67c4d34fde640c6ea273195)
+      '@langchain/google-gauth': 0.1.8(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(encoding@0.1.13)(zod@3.25.76)
+      '@langchain/langgraph-sdk': 2.0.0(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@langchain/openai': 1.2.9(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(ws@8.19.0)
+      groq-sdk: 0.5.0(encoding@0.1.13)
+      langchain: 1.2.7(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod-to-json-schema@3.25.1(zod@3.25.76))
+    transitivePeerDependencies:
+      - '@cfworker/json-schema'
+      - '@opentelemetry/api'
+      - '@opentelemetry/exporter-trace-otlp-proto'
+      - '@opentelemetry/sdk-trace-base'
+      - bufferutil
+      - encoding
+      - react
+      - react-dom
+      - supports-color
+      - utf-8-validate
+      - zod-to-json-schema
+
+  '@copilotkit/sdk-js@1.51.4(@ag-ui/core@0.0.48)(@langchain/community@0.3.59(7cba2d37df6bcc893d29a6c39d7c5567))(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(@langchain/langgraph@1.0.2(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod-to-json-schema@3.25.1(zod@3.25.76))(zod@3.25.76))(encoding@0.1.13)(langchain@1.2.7(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod-to-json-schema@3.25.1(zod@3.25.76)))(typescript@5.9.3)(zod@3.25.76)':
+    dependencies:
+      '@copilotkit/shared': 1.51.4(@ag-ui/core@0.0.48)(encoding@0.1.13)
+      '@langchain/community': 0.3.59(64a7126ce67c4d34fde640c6ea273195)
+      '@langchain/core': 1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76))
+      '@langchain/langgraph': 1.0.2(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod-to-json-schema@3.25.1(zod@3.25.76))(zod@3.25.76)
+      langchain: 1.2.7(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod-to-json-schema@3.25.1(zod@3.25.76))
+      typescript: 5.9.3
+      zod: 3.25.76
+    transitivePeerDependencies:
+      - '@ag-ui/core'
+      - encoding
+
+  '@copilotkit/shared@1.51.4(@ag-ui/core@0.0.48)(encoding@0.1.13)':
+    dependencies:
+      '@ag-ui/core': 0.0.48
+      '@segment/analytics-node': 2.3.0(encoding@0.1.13)
+      chalk: 4.1.2
+      graphql: 16.12.0
+      uuid: 10.0.0
+      zod: 3.25.76
+    transitivePeerDependencies:
+      - encoding
+
   '@copilotkit/shared@1.54.1-next.2(@ag-ui/core@0.0.47)(encoding@0.1.13)':
     dependencies:
       '@ag-ui/core': 0.0.47
@@ -26958,6 +28064,33 @@ snapshots:
       zod: 3.25.76
     transitivePeerDependencies:
       - encoding
+
+  '@copilotkit/shared@1.55.0-next.7(@ag-ui/core@0.0.48)(encoding@0.1.13)':
+    dependencies:
+      '@ag-ui/client': 0.0.47
+      '@ag-ui/core': 0.0.48
+      '@copilotkit/license-verifier': 0.0.1-a1
+      '@segment/analytics-node': 2.3.0(encoding@0.1.13)
+      '@standard-schema/spec': 1.1.0
+      chalk: 4.1.2
+      graphql: 16.12.0
+      partial-json: 0.1.7
+      uuid: 11.1.0
+      zod: 3.25.76
+    transitivePeerDependencies:
+      - encoding
+
+  '@copilotkit/web-inspector@1.55.0-next.7(@ag-ui/core@0.0.48)(encoding@0.1.13)(zod@3.25.76)':
+    dependencies:
+      '@ag-ui/client': 0.0.48
+      '@copilotkit/core': 1.55.0-next.7(@ag-ui/core@0.0.48)(encoding@0.1.13)(zod@3.25.76)
+      lit: 3.3.2
+      lucide: 0.525.0
+      marked: 12.0.2
+    transitivePeerDependencies:
+      - '@ag-ui/core'
+      - encoding
+      - zod
 
   '@copilotkitnext/agent@1.54.1-next.2(@cfworker/json-schema@4.1.1)':
     dependencies:
@@ -27047,11 +28180,11 @@ snapshots:
       - signal-polyfill
       - supports-color
 
-  '@copilotkitnext/react@1.54.1-next.6(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)':
+  '@copilotkitnext/react@1.54.1-next.6(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@ag-ui/client': 0.0.48
       '@ag-ui/core': 0.0.48
-      '@copilotkit/a2ui-renderer': 1.54.1-next.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)
+      '@copilotkit/a2ui-renderer': 1.54.1-next.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@copilotkitnext/core': 1.54.1-next.6(zod@3.25.76)
       '@copilotkitnext/shared': 1.54.1-next.6
       '@copilotkitnext/web-inspector': 1.54.1-next.6(zod@3.25.76)
@@ -29704,7 +30837,7 @@ snapshots:
       - handlebars
       - peggy
 
-  '@langchain/community@0.3.59(99a4996b0ff5e1423a6e47592d3ee004)':
+  '@langchain/community@0.3.59(fa8f4afd28667e912e4c73e3db6358e4)':
     dependencies:
       '@browserbasehq/stagehand': 1.14.0(@playwright/test@1.57.0)(deepmerge@4.3.1)(dotenv@17.3.1)(encoding@0.1.13)(openai@4.104.0(encoding@0.1.13)(ws@8.19.0)(zod@3.25.76))(zod@3.25.76)
       '@ibm-cloud/watsonx-ai': 1.7.6
@@ -29999,6 +31132,16 @@ snapshots:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
 
+  '@langchain/langgraph-sdk@1.0.3(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      p-queue: 6.6.2
+      p-retry: 4.6.2
+      uuid: 9.0.1
+    optionalDependencies:
+      '@langchain/core': 1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76))
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+
   '@langchain/langgraph-sdk@1.4.5(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       p-queue: 9.1.0
@@ -30061,6 +31204,19 @@ snapshots:
       esbuild: 0.25.12
       esbuild-plugin-tailwindcss: 2.1.0
       zod: 3.25.76
+
+  '@langchain/langgraph@1.0.2(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod-to-json-schema@3.25.1(zod@3.25.76))(zod@3.25.76)':
+    dependencies:
+      '@langchain/core': 1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76))
+      '@langchain/langgraph-checkpoint': 1.0.0(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))
+      '@langchain/langgraph-sdk': 1.0.3(@langchain/core@1.1.27(@opentelemetry/api@1.9.0)(openai@6.24.0(ws@8.19.0)(zod@3.25.76)))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      uuid: 10.0.0
+      zod: 3.25.76
+    optionalDependencies:
+      zod-to-json-schema: 3.25.1(zod@3.25.76)
+    transitivePeerDependencies:
+      - react
+      - react-dom
 
   '@langchain/langgraph@1.1.5(@langchain/core@0.3.80(@opentelemetry/api@1.9.0)(openai@4.104.0(encoding@0.1.13)(ws@8.19.0)(zod@3.25.76)))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod-to-json-schema@3.25.1(zod@3.25.76))(zod@3.25.76)':
     dependencies:
@@ -35598,6 +36754,14 @@ snapshots:
     optionalDependencies:
       vite: 7.3.1(@types/node@18.19.130)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.30.2)(sass@1.97.2)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2)
 
+  '@vitest/mocker@3.2.4(vite@7.3.1(@types/node@20.19.27)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.30.2)(sass@1.97.2)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2))':
+    dependencies:
+      '@vitest/spy': 3.2.4
+      estree-walker: 3.0.3
+      magic-string: 0.30.21
+    optionalDependencies:
+      vite: 7.3.1(@types/node@20.19.27)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.30.2)(sass@1.97.2)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2)
+
   '@vitest/mocker@3.2.4(vite@7.3.1(@types/node@22.19.11)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.30.2)(sass@1.97.2)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2))':
     dependencies:
       '@vitest/spy': 3.2.4
@@ -36287,6 +37451,14 @@ snapshots:
   axios@1.13.2:
     dependencies:
       follow-redirects: 1.15.11(debug@4.3.2)
+      form-data: 4.0.5
+      proxy-from-env: 1.1.0
+    transitivePeerDependencies:
+      - debug
+
+  axios@1.13.2(debug@4.4.3):
+    dependencies:
+      follow-redirects: 1.15.11(debug@4.4.3)
       form-data: 4.0.5
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
@@ -41546,7 +42718,7 @@ snapshots:
       '@types/debug': 4.1.12
       '@types/node': 18.19.130
       '@types/tough-cookie': 4.0.5
-      axios: 1.13.2
+      axios: 1.13.2(debug@4.4.3)
       camelcase: 6.3.0
       debug: 4.4.3(supports-color@8.1.1)
       dotenv: 16.6.1
@@ -41556,7 +42728,7 @@ snapshots:
       isstream: 0.1.2
       jsonwebtoken: 9.0.3
       mime-types: 2.1.35
-      retry-axios: 2.6.0(axios@1.13.2(debug@4.4.3))
+      retry-axios: 2.6.0(axios@1.13.2)
       tough-cookie: 4.1.4
     transitivePeerDependencies:
       - supports-color
@@ -44768,6 +45940,19 @@ snapshots:
       - supports-color
       - unified
 
+  next-mdx-remote@5.0.0(@types/react@19.2.7)(react@19.1.0):
+    dependencies:
+      '@babel/code-frame': 7.29.0
+      '@mdx-js/mdx': 3.1.1
+      '@mdx-js/react': 3.1.1(@types/react@19.2.7)(react@19.1.0)
+      react: 19.1.0
+      unist-util-remove: 3.1.1
+      vfile: 6.0.3
+      vfile-matter: 5.0.1
+    transitivePeerDependencies:
+      - '@types/react'
+      - supports-color
+
   next-themes@0.2.1(next@15.4.10(@opentelemetry/api@1.9.0)(@playwright/test@1.57.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.97.2))(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       next: 15.4.10(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.57.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.97.2)
@@ -47109,7 +48294,7 @@ snapshots:
       retext-stringify: 4.0.0
       unified: 11.0.5
 
-  retry-axios@2.6.0(axios@1.13.2(debug@4.4.3)):
+  retry-axios@2.6.0(axios@1.13.2):
     dependencies:
       axios: 1.13.2
 
@@ -49384,6 +50569,12 @@ snapshots:
       '@types/unist': 3.0.3
       unist-util-visit: 5.0.0
 
+  unist-util-remove@3.1.1:
+    dependencies:
+      '@types/unist': 2.0.11
+      unist-util-is: 5.2.1
+      unist-util-visit-parents: 5.1.3
+
   unist-util-remove@4.0.0:
     dependencies:
       '@types/unist': 3.0.3
@@ -49993,7 +51184,7 @@ snapshots:
     dependencies:
       '@types/chai': 5.2.3
       '@vitest/expect': 3.2.4
-      '@vitest/mocker': 3.2.4(vite@7.3.1(@types/node@18.19.130)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.30.2)(sass@1.97.2)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2))
+      '@vitest/mocker': 3.2.4(vite@7.3.1(@types/node@20.19.27)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.30.2)(sass@1.97.2)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2))
       '@vitest/pretty-format': 3.2.4
       '@vitest/runner': 3.2.4
       '@vitest/snapshot': 3.2.4
@@ -50081,7 +51272,7 @@ snapshots:
     dependencies:
       '@types/chai': 5.2.3
       '@vitest/expect': 3.2.4
-      '@vitest/mocker': 3.2.4(vite@7.3.1(@types/node@22.19.11)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.30.2)(sass@1.97.2)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2))
+      '@vitest/mocker': 3.2.4(vite@7.3.1(@types/node@18.19.130)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.30.2)(sass@1.97.2)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2))
       '@vitest/pretty-format': 3.2.4
       '@vitest/runner': 3.2.4
       '@vitest/snapshot': 3.2.4
