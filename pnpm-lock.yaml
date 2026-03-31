@@ -2783,7 +2783,7 @@ importers:
         version: 0.0.48
       '@copilotkit/react-core':
         specifier: next
-        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
       '@copilotkit/runtime':
         specifier: next
         version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
@@ -2832,7 +2832,7 @@ importers:
         version: 0.0.42
       '@copilotkit/react-core':
         specifier: next
-        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
       '@copilotkit/runtime':
         specifier: next
         version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
@@ -2881,7 +2881,7 @@ importers:
         version: 0.0.48
       '@copilotkit/react-core':
         specifier: next
-        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
       '@copilotkit/runtime':
         specifier: next
         version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
@@ -2939,7 +2939,7 @@ importers:
         version: 0.39.0(encoding@0.1.13)
       '@copilotkit/react-core':
         specifier: next
-        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
       '@copilotkit/runtime':
         specifier: next
         version: 1.55.0-next.7(c62e3e3bf5e9e16ae3c8d7c9c83951f7)
@@ -2992,9 +2992,12 @@ importers:
 
   showcase/packages/crewai-crews:
     dependencies:
+      '@ag-ui/client':
+        specifier: ^0.0.48
+        version: 0.0.48
       '@copilotkit/react-core':
         specifier: next
-        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
       '@copilotkit/runtime':
         specifier: next
         version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
@@ -3043,7 +3046,7 @@ importers:
         version: 0.0.42
       '@copilotkit/react-core':
         specifier: next
-        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
       '@copilotkit/runtime':
         specifier: next
         version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
@@ -3092,7 +3095,7 @@ importers:
         version: 0.0.48
       '@copilotkit/react-core':
         specifier: next
-        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
       '@copilotkit/runtime':
         specifier: next
         version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
@@ -3182,9 +3185,12 @@ importers:
 
   showcase/packages/langgraph-typescript:
     dependencies:
+      '@ag-ui/client':
+        specifier: ^0.0.48
+        version: 0.0.48
       '@copilotkit/react-core':
         specifier: next
-        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
       '@copilotkit/runtime':
         specifier: next
         version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
@@ -3248,7 +3254,7 @@ importers:
         version: 0.0.48
       '@copilotkit/react-core':
         specifier: next
-        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
       '@copilotkit/runtime':
         specifier: next
         version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
@@ -3297,7 +3303,7 @@ importers:
         version: 0.0.48
       '@copilotkit/react-core':
         specifier: next
-        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
       '@copilotkit/runtime':
         specifier: next
         version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
@@ -3419,7 +3425,7 @@ importers:
         version: 0.0.48
       '@copilotkit/react-core':
         specifier: next
-        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
       '@copilotkit/runtime':
         specifier: next
         version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
@@ -3468,7 +3474,7 @@ importers:
         version: 0.0.48
       '@copilotkit/react-core':
         specifier: next
-        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
       '@copilotkit/runtime':
         specifier: next
         version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
@@ -3517,7 +3523,7 @@ importers:
         version: 0.0.48
       '@copilotkit/react-core':
         specifier: next
-        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
       '@copilotkit/runtime':
         specifier: next
         version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
@@ -3566,7 +3572,7 @@ importers:
         version: 0.0.48
       '@copilotkit/react-core':
         specifier: next
-        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
       '@copilotkit/runtime':
         specifier: next
         version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
@@ -3612,7 +3618,7 @@ importers:
         version: 0.0.48
       '@copilotkit/react-core':
         specifier: next
-        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)
+        version: 1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)
       '@copilotkit/runtime':
         specifier: next
         version: 1.55.0-next.7(ec644475677b29718be06ae064943166)
@@ -27640,7 +27646,7 @@ snapshots:
     transitivePeerDependencies:
       - signal-polyfill
 
-  '@copilotkit/a2ui-renderer@1.55.0-next.7(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)':
+  '@copilotkit/a2ui-renderer@1.55.0-next.7(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@a2ui/lit': 0.8.1(signal-polyfill@0.2.2)
       clsx: 2.1.1
@@ -27715,11 +27721,11 @@ snapshots:
       - signal-polyfill
       - supports-color
 
-  '@copilotkit/react-core@1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)(zod@3.25.76)':
+  '@copilotkit/react-core@1.55.0-next.7(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(encoding@0.1.13)(graphql@16.12.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@3.25.76)':
     dependencies:
       '@ag-ui/client': 0.0.48
       '@ag-ui/core': 0.0.48
-      '@copilotkit/a2ui-renderer': 1.55.0-next.7(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(signal-polyfill@0.2.2)
+      '@copilotkit/a2ui-renderer': 1.55.0-next.7(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@copilotkit/core': 1.55.0-next.7(@ag-ui/core@0.0.48)(encoding@0.1.13)(zod@3.25.76)
       '@copilotkit/runtime-client-gql': 1.55.0-next.7(@ag-ui/core@0.0.48)(encoding@0.1.13)(graphql@16.12.0)(react@19.1.0)
       '@copilotkit/shared': 1.55.0-next.7(@ag-ui/core@0.0.48)(encoding@0.1.13)
