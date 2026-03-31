@@ -23,6 +23,7 @@ ENV NEXT_PUBLIC_BRANCH=${BRANCH}
 # Generate registry + content, then build Next.js
 RUN cd scripts && node node_modules/tsx/dist/cli.mjs generate-registry.ts \
     && node node_modules/tsx/dist/cli.mjs bundle-demo-content.ts \
+    && node node_modules/tsx/dist/cli.mjs generate-search-index.ts \
     && cd ../shell && npx next build
 
 FROM node:20-slim AS runner
@@ -36,6 +37,7 @@ COPY --from=builder /app/shell/.next ./.next
 COPY --from=builder /app/shell/node_modules ./node_modules
 COPY --from=builder /app/shell/package.json ./
 COPY --from=builder /app/shell/public ./public
+COPY --from=builder /app/shell/src/content ./src/content
 
 EXPOSE 10000
 CMD ["npx", "next", "start", "-p", "10000"]
