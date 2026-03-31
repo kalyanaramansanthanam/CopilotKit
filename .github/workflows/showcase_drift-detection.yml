@@ -65,6 +65,15 @@ jobs:
           - slug: ms-agent-python
             name: "MS Agent Framework (Python)"
             url: https://showcase-ms-agent-python-production.up.railway.app
+          - slug: claude-sdk-typescript
+            name: "Claude Agent SDK (TypeScript)"
+            url: https://showcase-claude-sdk-typescript-production.up.railway.app
+          - slug: ms-agent-dotnet
+            name: "MS Agent Framework (.NET)"
+            url: https://showcase-ms-agent-dotnet-production.up.railway.app
+          - slug: claude-sdk-python
+            name: "Claude Agent SDK (Python)"
+            url: https://showcase-claude-sdk-python-production.up.railway.app
 
     steps:
       - name: Checkout
