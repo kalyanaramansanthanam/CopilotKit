@@ -10,7 +10,7 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
-    "@ag-ui/client": "^0.0.48",
+    "@ag-ui/client": "0.0.46",
     "@ag-ui/core": "^0.0.48",
     "@ag-ui/encoder": "^0.0.48",
     "@anthropic-ai/sdk": "^0.39.0",

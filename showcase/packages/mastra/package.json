@@ -10,7 +10,7 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
-    "@ag-ui/client": "0.0.42",
+    "@ag-ui/client": "0.0.46",
     "@ag-ui/mastra": "beta",
     "@ai-sdk/openai": "^2.0.42",
     "@copilotkit/react-core": "next",
