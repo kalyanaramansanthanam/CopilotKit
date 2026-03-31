@@ -64,7 +64,7 @@ const components = {
     PropertyReference,
     Note: Callout,
     Warning: ({ children }: { children: React.ReactNode }) => (
-        <Callout type="warning">{children}</Callout>
+        <Callout type="warn">{children}</Callout>
     ),
     Tip: ({ children }: { children: React.ReactNode }) => (
         <Callout type="info">{children}</Callout>
