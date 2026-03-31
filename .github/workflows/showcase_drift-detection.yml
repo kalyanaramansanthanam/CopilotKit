@@ -59,6 +59,12 @@ jobs:
           - slug: spring-ai
             name: "Spring AI"
             url: https://showcase-spring-ai-production.up.railway.app
+          - slug: strands
+            name: "AWS Strands"
+            url: https://showcase-strands-production.up.railway.app
+          - slug: ms-agent-python
+            name: "MS Agent Framework (Python)"
+            url: https://showcase-ms-agent-python-production.up.railway.app
 
     steps:
       - name: Checkout
