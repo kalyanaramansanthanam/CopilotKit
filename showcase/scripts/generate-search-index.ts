@@ -114,6 +114,14 @@ function main() {
         console.log(`  AG-UI: ${aguiEntries.length} entries`);
     }
 
+    // CopilotKit Docs
+    const docsDir = path.join(SHELL_DIR, "content", "docs");
+    if (fs.existsSync(docsDir)) {
+        const docsEntries = scanMdxDir(docsDir, "/docs", "page");
+        entries.push(...docsEntries);
+        console.log(`  Docs: ${docsEntries.length} entries`);
+    }
+
     // Write
     fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
     fs.writeFileSync(OUTPUT_PATH, JSON.stringify(entries, null, 2) + "\n");

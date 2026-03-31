@@ -11,6 +11,7 @@ const AG_UI_PREFIXES = ["/ag-ui"];
 const COPILOTKIT_LINKS = [
     { href: "/", label: "Home" },
     { href: "/integrations", label: "Integrations" },
+    { href: "/docs", label: "Docs" },
     { href: "/reference", label: "Reference" },
     { href: "/matrix", label: "Matrix" },
 ];
