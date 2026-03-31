@@ -6,7 +6,7 @@ import { SearchTrigger } from "./search-trigger";
 
 type Brand = "copilotkit" | "ag-ui";
 
-const AG_UI_PREFIXES = ["/protocol", "/events", "/sdk", "/ag-ui"];
+const AG_UI_PREFIXES = ["/ag-ui"];
 
 const COPILOTKIT_LINKS = [
     { href: "/", label: "Home" },
@@ -17,10 +17,11 @@ const COPILOTKIT_LINKS = [
 
 const AG_UI_LINKS = [
     { href: "/ag-ui", label: "Overview" },
-    { href: "/protocol", label: "Protocol" },
-    { href: "/events", label: "Events" },
-    { href: "/sdk/js", label: "JS SDK" },
-    { href: "/sdk/python", label: "Python SDK" },
+    { href: "/ag-ui/concepts/architecture", label: "Architecture" },
+    { href: "/ag-ui/concepts/events", label: "Events" },
+    { href: "/ag-ui/sdk/js/overview", label: "JS SDK" },
+    { href: "/ag-ui/sdk/python/core/overview", label: "Python SDK" },
+    { href: "/ag-ui/quickstart/introduction", label: "Quick Start" },
 ];
 
 function activeBrandFromPath(pathname: string): Brand {
