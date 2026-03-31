@@ -16,7 +16,6 @@ description: "Low-level React hook for accessing the CopilotKit context"
 ## Signature
 
 ```tsx
-import { useCopilotKit } from "@copilotkit/react-core/v2";
 
 function useCopilotKit(): CopilotKitContextValue
 ```
@@ -51,7 +50,6 @@ This hook takes no parameters.
 ### Accessing the Core Instance
 
 ```tsx
-import { useCopilotKit } from "@copilotkit/react-core/v2";
 
 function DebugPanel() {
   const { copilotkit } = useCopilotKit();
@@ -74,8 +72,6 @@ function DebugPanel() {
 ### Subscribing to Core Events
 
 ```tsx
-import { useEffect } from "react";
-import { useCopilotKit } from "@copilotkit/react-core/v2";
 
 function ConnectionMonitor() {
   const { copilotkit } = useCopilotKit();
@@ -101,7 +97,6 @@ function ConnectionMonitor() {
 `copilotkit.runTool()` lets you execute a registered frontend tool directly from code — no LLM turn required. The tool's handler runs, render components appear in the UI, and both the tool call and result are added to the agent's message history.
 
 ```tsx
-import { useCopilotKit, useFrontendTool } from "@copilotkit/react-core/v2";
 
 function ExportButton() {
   const { copilotkit } = useCopilotKit();
@@ -173,7 +168,6 @@ function ExportButton() {
 ### Checking Tool Execution State
 
 ```tsx
-import { useCopilotKit } from "@copilotkit/react-core/v2";
 
 function ToolExecutionIndicator() {
   const { executingToolCallIds } = useCopilotKit();

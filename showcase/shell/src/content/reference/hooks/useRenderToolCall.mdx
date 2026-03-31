@@ -12,7 +12,6 @@ This hook is primarily used by chat UI components to display visual feedback for
 ## Signature
 
 ```tsx
-import { useRenderToolCall } from "@copilotkit/react-core/v2";
 
 function useRenderToolCall(): (props: UseRenderToolCallProps) => React.ReactElement | null;
 ```
@@ -60,7 +59,6 @@ The `ToolCallStatus` enum is exported from `@copilotkit/react-core/v2`:
 ### Using the Renderer in a Custom Chat Component
 
 ```tsx
-import { useRenderToolCall } from "@copilotkit/react-core/v2";
 
 function CustomChatMessage({ message }) {
   const renderToolCall = useRenderToolCall();
@@ -87,8 +85,6 @@ function CustomChatMessage({ message }) {
 Tool call renderers are typically registered through `useFrontendTool` or directly via the `renderToolCalls` prop on the provider. The `useRenderToolCall` hook resolves these registrations at render time.
 
 ```tsx
-import { z } from "zod";
-import { useFrontendTool, ToolCallStatus } from "@copilotkit/react-core/v2";
 
 function App() {
   // Register a tool with a render component
@@ -132,8 +128,6 @@ function App() {
 If no exact name match is found, the hook falls back to a wildcard `"*"` renderer. This is useful for providing a generic UI for all unhandled tool calls.
 
 ```tsx
-import { CopilotKitProvider } from "@copilotkit/react-core/v2";
-import { ToolCallStatus } from "@copilotkit/react-core/v2";
 
 function App() {
   return (

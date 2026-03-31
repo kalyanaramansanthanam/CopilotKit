@@ -15,9 +15,6 @@ Use this when you want a visual component renderer without writing a full fronte
 ## Signature
 
 ```tsx
-import { z } from "zod";
-import type { ComponentType } from "react";
-import { useComponent } from "@copilotkit/react-core/v2";
 
 function useComponent<
   TSchema extends z.ZodTypeAny | undefined = undefined,
@@ -54,8 +51,6 @@ function useComponent<
 ## Usage
 
 ```tsx
-import { z } from "zod";
-import { useComponent } from "@copilotkit/react-core/v2";
 
 const weatherCardSchema = z.object({
   city: z.string().describe("City name"),

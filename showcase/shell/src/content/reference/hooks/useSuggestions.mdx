@@ -12,7 +12,6 @@ Suggestions are configured via [`useConfigureSuggestions`](/reference/hooks/useC
 ## Signature
 
 ```tsx
-import { useSuggestions } from "@copilotkit/react-core/v2";
 
 function useSuggestions(options?: UseSuggestionsOptions): UseSuggestionsResult
 ```
@@ -57,7 +56,6 @@ function useSuggestions(options?: UseSuggestionsOptions): UseSuggestionsResult
 ### Basic Usage
 
 ```tsx
-import { useSuggestions } from "@copilotkit/react-core/v2";
 
 function SuggestionsList() {
   const { suggestions, isLoading } = useSuggestions();
@@ -82,7 +80,6 @@ function SuggestionsList() {
 ### With Reload and Clear Controls
 
 ```tsx
-import { useSuggestions } from "@copilotkit/react-core/v2";
 
 function SuggestionsPanel() {
   const { suggestions, reloadSuggestions, clearSuggestions, isLoading } =
@@ -109,7 +106,6 @@ function SuggestionsPanel() {
 ### Targeting a Specific Agent
 
 ```tsx
-import { useSuggestions } from "@copilotkit/react-core/v2";
 
 function AgentSuggestions() {
   const { suggestions } = useSuggestions({ agentId: "support-agent" });

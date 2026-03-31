@@ -10,8 +10,6 @@ description: "Component for displaying assistant messages with Markdown, tool ca
 ## Import
 
 ```tsx
-import { CopilotChatAssistantMessage } from "@copilotkit/react-core/v2";
-import "@copilotkit/react-core/v2/styles.css";
 ```
 
 ## Props
@@ -113,7 +111,6 @@ A companion component that renders the tool calls contained in an assistant mess
 ### Import
 
 ```tsx
-import { CopilotChatToolCallsView } from "@copilotkit/react-core/v2";
 ```
 
 ### Props
@@ -131,7 +128,6 @@ import { CopilotChatToolCallsView } from "@copilotkit/react-core/v2";
 ### Basic Assistant Message
 
 ```tsx
-import { CopilotChatAssistantMessage } from "@copilotkit/react-core/v2";
 
 function AssistantBubble({ message }) {
   return (
@@ -147,7 +143,6 @@ function AssistantBubble({ message }) {
 ### Customizing the Toolbar
 
 ```tsx
-import { CopilotChatAssistantMessage } from "@copilotkit/react-core/v2";
 
 function CustomToolbarMessage({ message }) {
   return (
@@ -167,7 +162,6 @@ function CustomToolbarMessage({ message }) {
 ### Hiding the Toolbar
 
 ```tsx
-import { CopilotChatAssistantMessage } from "@copilotkit/react-core/v2";
 
 function MinimalMessage({ message }) {
   return (
@@ -182,8 +176,6 @@ function MinimalMessage({ message }) {
 ### Custom Markdown Renderer
 
 ```tsx
-import { CopilotChatAssistantMessage } from "@copilotkit/react-core/v2";
-import ReactMarkdown from "react-markdown";
 
 function CustomRendererMessage({ message }) {
   return (
@@ -200,7 +192,6 @@ function CustomRendererMessage({ message }) {
 ### Standalone Tool Calls View
 
 ```tsx
-import { CopilotChatToolCallsView } from "@copilotkit/react-core/v2";
 
 function ToolCallsList({ message, allMessages }) {
   return (

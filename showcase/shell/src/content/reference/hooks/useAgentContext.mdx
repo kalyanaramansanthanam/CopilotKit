@@ -12,7 +12,6 @@ Update the incoming context object to refresh what the agent sees. This is the v
 ## Signature
 
 ```tsx
-import { useAgentContext } from "@copilotkit/react-core/v2";
 
 function useAgentContext(context: AgentContextInput): void;
 ```
@@ -38,7 +37,6 @@ function useAgentContext(context: AgentContextInput): void;
 Provide simple application state as context for the agent.
 
 ```tsx
-import { useAgentContext } from "@copilotkit/react-core/v2";
 
 function UserGreeting({ user }: { user: { name: string; role: string } }) {
   useAgentContext({
@@ -55,8 +53,6 @@ function UserGreeting({ user }: { user: { name: string; role: string } }) {
 The context updates automatically when the value changes between renders.
 
 ```tsx
-import { useState } from "react";
-import { useAgentContext } from "@copilotkit/react-core/v2";
 
 function ProductCatalog() {
   const [selectedCategory, setSelectedCategory] = useState("electronics");
@@ -91,7 +87,6 @@ function ProductCatalog() {
 Each component can register its own context. All registered contexts are visible to the agent simultaneously.
 
 ```tsx
-import { useAgentContext } from "@copilotkit/react-core/v2";
 
 function Dashboard() {
   useAgentContext({

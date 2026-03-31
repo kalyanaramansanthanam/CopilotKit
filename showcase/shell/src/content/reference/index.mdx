@@ -3,8 +3,6 @@ title: "API Reference"
 description: "API Reference for the next-generation CopilotKit React API."
 ---
 
-import { LinkIcon } from "lucide-react";
-import { Accordions, Accordion } from "fumadocs-ui/components/accordion";
 
 The v2 React API (`@copilotkit/react-core/v2`) is the next-generation interface for building copilot-powered applications. It provides a streamlined set of hooks and components built on top of the [AG-UI](https://docs.ag-ui.com) agent protocol.
 
@@ -14,7 +12,6 @@ The v2 API uses the [`<CopilotKit>`](/reference/components/CopilotKit) provider.
 
 ```tsx
 // CopilotKit is imported from the root package, not from the v2 subpackage
-import { CopilotKit } from "@copilotkit/react-core";
 
 function App() {
   return (
@@ -35,7 +32,6 @@ function App() {
 If you need direct control over the v2 provider (e.g. for custom integrations), you can import `CopilotKitProvider` from `@copilotkit/react-core/v2`:
 
 ```tsx
-import { CopilotKitProvider } from "@copilotkit/react-core/v2";
 
 <CopilotKitProvider runtimeUrl="/api/copilotkit">
   <App />
@@ -125,7 +121,6 @@ import { CopilotKitProvider } from "@copilotkit/react-core/v2";
 When using v2 UI components, import the stylesheet once at your app boundary:
 
 ```tsx
-import "@copilotkit/react-core/v2/styles.css";
 ```
 
 ## API Reference

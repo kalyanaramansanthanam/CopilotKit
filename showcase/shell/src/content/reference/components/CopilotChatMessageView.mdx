@@ -10,8 +10,6 @@ description: "Component for rendering a list of chat messages"
 ## Import
 
 ```tsx
-import { CopilotChatMessageView } from "@copilotkit/react-core/v2";
-import "@copilotkit/react-core/v2/styles.css";
 ```
 
 ## Props
@@ -101,8 +99,6 @@ All slot props follow the CopilotKit slot system: each accepts a replacement Rea
 ### Basic Message List
 
 ```tsx
-import { CopilotChatMessageView } from "@copilotkit/react-core/v2";
-import { useAgent } from "@copilotkit/react-core/v2";
 
 function MessageList() {
   const { agent } = useAgent();
@@ -119,7 +115,6 @@ function MessageList() {
 ### Customizing Message Slots
 
 ```tsx
-import { CopilotChatMessageView } from "@copilotkit/react-core/v2";
 
 function CustomMessages() {
   const { agent } = useAgent();
@@ -139,7 +134,6 @@ function CustomMessages() {
 ### Render-Prop Children for Custom Layout
 
 ```tsx
-import { CopilotChatMessageView } from "@copilotkit/react-core/v2";
 
 function CustomLayout() {
   const { agent } = useAgent();
@@ -170,7 +164,6 @@ function CustomLayout() {
 ### Hiding the Toolbar on Assistant Messages
 
 ```tsx
-import { CopilotChatMessageView } from "@copilotkit/react-core/v2";
 
 function MinimalChat() {
   const { agent } = useAgent();

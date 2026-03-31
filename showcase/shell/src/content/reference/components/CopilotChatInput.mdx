@@ -12,8 +12,6 @@ The component operates in three modes: `"input"` (default text entry), `"transcr
 ## Import
 
 ```tsx
-import { CopilotChatInput } from "@copilotkit/react-core/v2";
-import "@copilotkit/react-core/v2/styles.css";
 ```
 
 ## Props
@@ -185,7 +183,6 @@ A visual audio waveform component used during transcription mode. It displays a 
 ### Import
 
 ```tsx
-import { CopilotChatAudioRecorder } from "@copilotkit/react-core/v2";
 ```
 
 ### Imperative API
@@ -211,8 +208,6 @@ The component exposes the following imperative methods via React `ref`:
 ### Usage
 
 ```tsx
-import { useRef } from "react";
-import { CopilotChatAudioRecorder } from "@copilotkit/react-core/v2";
 
 function CustomRecorder() {
   const recorderRef = useRef(null);
@@ -232,8 +227,6 @@ function CustomRecorder() {
 ### Basic Chat Input
 
 ```tsx
-import { useState } from "react";
-import { CopilotChatInput } from "@copilotkit/react-core/v2";
 
 function ChatInput() {
   const [value, setValue] = useState("");
@@ -255,8 +248,6 @@ function ChatInput() {
 ### With Voice Transcription
 
 ```tsx
-import { useState } from "react";
-import { CopilotChatInput } from "@copilotkit/react-core/v2";
 
 function VoiceInput() {
   const [mode, setMode] = useState<"input" | "transcribe">("input");
@@ -283,7 +274,6 @@ function VoiceInput() {
 ### With Tools Menu
 
 ```tsx
-import { CopilotChatInput } from "@copilotkit/react-core/v2";
 
 function InputWithTools() {
   return (
@@ -309,8 +299,6 @@ function InputWithTools() {
 ### With Stop Button During Execution
 
 ```tsx
-import { CopilotChatInput } from "@copilotkit/react-core/v2";
-import { useAgent } from "@copilotkit/react-core/v2";
 
 function ChatInputWithAgent() {
   const { agent } = useAgent();
@@ -332,7 +320,6 @@ function ChatInputWithAgent() {
 ### Custom Layout with Children Render Prop
 
 ```tsx
-import { CopilotChatInput } from "@copilotkit/react-core/v2";
 
 function AdaptiveInput() {
   return (
@@ -352,7 +339,6 @@ function AdaptiveInput() {
 ### Styled Slots
 
 ```tsx
-import { CopilotChatInput } from "@copilotkit/react-core/v2";
 
 function StyledInput() {
   return (

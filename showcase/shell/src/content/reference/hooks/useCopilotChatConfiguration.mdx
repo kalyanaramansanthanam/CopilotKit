@@ -16,7 +16,6 @@ A provider component that exposes localized labels, agent and thread IDs, and op
 ### Signature
 
 ```tsx
-import { CopilotChatConfigurationProvider } from "@copilotkit/react-core/v2";
 
 <CopilotChatConfigurationProvider
   labels={...}
@@ -55,7 +54,6 @@ import { CopilotChatConfigurationProvider } from "@copilotkit/react-core/v2";
 ### Signature
 
 ```tsx
-import { useCopilotChatConfiguration } from "@copilotkit/react-core/v2";
 
 function useCopilotChatConfiguration(): CopilotChatConfigurationValue | null
 ```
@@ -124,7 +122,6 @@ The `CopilotChatLabels` type defines all customizable text strings used by the c
 ### Basic Label Customization
 
 ```tsx
-import {
   CopilotChatConfigurationProvider,
   useCopilotChatConfiguration,
 } from "@copilotkit/react-core/v2";
@@ -148,7 +145,6 @@ function App() {
 ### Reading Configuration in a Component
 
 ```tsx
-import { useCopilotChatConfiguration } from "@copilotkit/react-core/v2";
 
 function ChatHeader() {
   const config = useCopilotChatConfiguration();
@@ -164,7 +160,6 @@ function ChatHeader() {
 ### Binding to a Specific Agent and Thread
 
 ```tsx
-import { CopilotChatConfigurationProvider } from "@copilotkit/react-core/v2";
 
 function SupportChat() {
   return (
@@ -185,7 +180,6 @@ function SupportChat() {
 ### Modal State Management
 
 ```tsx
-import {
   CopilotChatConfigurationProvider,
   useCopilotChatConfiguration,
 } from "@copilotkit/react-core/v2";
@@ -219,7 +213,6 @@ function ToggleButton() {
 Providers can be nested. Child providers inherit and merge labels from their parent, with child overrides taking precedence.
 
 ```tsx
-import { CopilotChatConfigurationProvider } from "@copilotkit/react-core/v2";
 
 function App() {
   return (

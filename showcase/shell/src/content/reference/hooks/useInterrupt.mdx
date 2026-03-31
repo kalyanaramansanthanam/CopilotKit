@@ -14,7 +14,6 @@ By default, interrupt UI is rendered inside `<CopilotChat>` automatically. If yo
 ## Signature
 
 ```tsx
-import { useInterrupt } from "@copilotkit/react-core/v2";
 
 function useInterrupt<
   TResult = never,
@@ -75,7 +74,6 @@ function useInterrupt<
 ### In-chat interrupt UI (default)
 
 ```tsx
-import { useInterrupt } from "@copilotkit/react-core/v2";
 
 function ApprovalInterrupt() {
   useInterrupt({
@@ -97,7 +95,6 @@ function ApprovalInterrupt() {
 ### Manual placement with async preprocessing
 
 ```tsx
-import { useInterrupt } from "@copilotkit/react-core/v2";
 
 function SidePanelInterrupt() {
   const element = useInterrupt({

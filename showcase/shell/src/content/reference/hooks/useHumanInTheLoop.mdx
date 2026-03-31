@@ -12,7 +12,6 @@ This hook is built on top of `useFrontendTool` with an internally managed handle
 ## Signature
 
 ```tsx
-import { useHumanInTheLoop } from "@copilotkit/react-core/v2";
 
 function useHumanInTheLoop<T extends Record<string, unknown>>(
   tool: ReactHumanInTheLoop<T>,
@@ -72,8 +71,6 @@ function useHumanInTheLoop<T extends Record<string, unknown>>(
 A common pattern where the agent asks the user to confirm a destructive action.
 
 ```tsx
-import { z } from "zod";
-import { useHumanInTheLoop, ToolCallStatus } from "@copilotkit/react-core/v2";
 
 function DeleteConfirmation() {
   useHumanInTheLoop({
@@ -134,9 +131,6 @@ function DeleteConfirmation() {
 Collect structured input from the user before the agent proceeds.
 
 ```tsx
-import { useState } from "react";
-import { z } from "zod";
-import { useHumanInTheLoop, ToolCallStatus } from "@copilotkit/react-core/v2";
 
 function ShippingAddressForm() {
   useHumanInTheLoop({
@@ -200,8 +194,6 @@ function ShippingAddressForm() {
 ### Approval Workflow with Context
 
 ```tsx
-import { z } from "zod";
-import { useHumanInTheLoop, ToolCallStatus } from "@copilotkit/react-core/v2";
 
 function ExpenseApproval() {
   useHumanInTheLoop({

@@ -12,7 +12,6 @@ The configuration is automatically registered on mount and removed on unmount. W
 ## Signature
 
 ```tsx
-import { useConfigureSuggestions } from "@copilotkit/react-core/v2";
 
 function useConfigureSuggestions(
   config: SuggestionsConfigInput | null | undefined,
@@ -86,7 +85,6 @@ function useConfigureSuggestions(
 ### Static Suggestions
 
 ```tsx
-import { useConfigureSuggestions } from "@copilotkit/react-core/v2";
 
 function WelcomeSuggestions() {
   useConfigureSuggestions({
@@ -105,7 +103,6 @@ function WelcomeSuggestions() {
 ### Dynamic Suggestions
 
 ```tsx
-import { useConfigureSuggestions } from "@copilotkit/react-core/v2";
 
 function SmartSuggestions() {
   useConfigureSuggestions({
@@ -124,8 +121,6 @@ function SmartSuggestions() {
 ### Dynamic Suggestions with Dependencies
 
 ```tsx
-import { useState } from "react";
-import { useConfigureSuggestions } from "@copilotkit/react-core/v2";
 
 function ContextualSuggestions() {
   const [topic, setTopic] = useState("general");
@@ -151,7 +146,6 @@ function ContextualSuggestions() {
 ### Conditionally Disabling Suggestions
 
 ```tsx
-import { useConfigureSuggestions } from "@copilotkit/react-core/v2";
 
 function ConditionalSuggestions({ enabled }: { enabled: boolean }) {
   useConfigureSuggestions(
@@ -171,7 +165,6 @@ function ConditionalSuggestions({ enabled }: { enabled: boolean }) {
 ### Targeting a Specific Agent
 
 ```tsx
-import { useConfigureSuggestions } from "@copilotkit/react-core/v2";
 
 function AgentSpecificSuggestions() {
   useConfigureSuggestions({

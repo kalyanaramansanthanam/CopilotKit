@@ -12,7 +12,6 @@ description: "React hook for accessing AG-UI agent instances"
 ## Signature
 
 ```tsx
-import { useAgent } from "@copilotkit/react-core/v2";
 
 function useAgent(options?: UseAgentProps): { agent: AbstractAgent }
 ```
@@ -142,7 +141,6 @@ function useAgent(options?: UseAgentProps): { agent: AbstractAgent }
 ### Basic Usage
 
 ```tsx
-import { useAgent } from "@copilotkit/react-core/v2";
 
 function AgentStatus() {
   const { agent } = useAgent();
@@ -160,7 +158,6 @@ function AgentStatus() {
 ### Accessing and Updating State
 
 ```tsx
-import { useAgent } from "@copilotkit/react-core/v2";
 
 function StateController() {
   const { agent } = useAgent();
@@ -179,8 +176,6 @@ function StateController() {
 ### Event Subscription
 
 ```tsx
-import { useEffect } from "react";
-import { useAgent } from "@copilotkit/react-core/v2";
 
 function EventListener() {
   const { agent } = useAgent();
@@ -201,7 +196,6 @@ function EventListener() {
 ### Multiple Agents
 
 ```tsx
-import { useAgent } from "@copilotkit/react-core/v2";
 
 function MultiAgentView() {
   const { agent: primary } = useAgent({ agentId: "primary" });
@@ -219,7 +213,6 @@ function MultiAgentView() {
 ### Optimizing Re-renders
 
 ```tsx
-import { useAgent, UseAgentUpdate } from "@copilotkit/react-core/v2";
 
 // Only re-render when messages change
 function MessageCount() {
