@@ -2,7 +2,7 @@
 FROM node:20-slim AS frontend
 WORKDIR /app
 COPY package.json ./
-RUN npm install
+RUN npm install --legacy-peer-deps
 COPY . .
 RUN npx next build
 
@@ -10,7 +10,7 @@ RUN npx next build
 FROM node:20-slim AS agent-deps
 WORKDIR /agent
 COPY src/agent/package.json ./
-RUN npm install
+RUN npm install --legacy-peer-deps
 
 # Stage 3: Production image
 FROM node:20-slim AS runner
