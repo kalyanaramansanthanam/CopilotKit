@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { SearchTrigger } from "@/components/search-trigger";
+import { BrandNav } from "@/components/brand-nav";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,43 +15,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className="min-h-screen">
-                <nav className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg-surface)]/90 backdrop-blur-lg">
-                    <div className="mx-auto flex h-[52px] items-center justify-between px-6">
-                        <Link
-                            href="/"
-                            className="text-sm font-bold tracking-tight text-[var(--text)]"
-                        >
-                            CopilotKit
-                        </Link>
-                        <div className="flex items-center gap-1">
-                            <Link
-                                href="/"
-                                className="rounded-md px-3 py-1.5 text-[13px] font-medium text-[var(--text-muted)] hover:text-[var(--text-secondary)] hover:bg-[var(--bg-elevated)] transition-all"
-                            >
-                                Home
-                            </Link>
-                            <Link
-                                href="/integrations"
-                                className="rounded-md px-3 py-1.5 text-[13px] font-medium text-[var(--text-muted)] hover:text-[var(--text-secondary)] hover:bg-[var(--bg-elevated)] transition-all"
-                            >
-                                Integrations
-                            </Link>
-                            <Link
-                                href="/matrix"
-                                className="rounded-md px-3 py-1.5 text-[13px] font-medium text-[var(--text-muted)] hover:text-[var(--text-secondary)] hover:bg-[var(--bg-elevated)] transition-all"
-                            >
-                                Matrix
-                            </Link>
-                            <Link
-                                href="/reference"
-                                className="rounded-md px-3 py-1.5 text-[13px] font-medium text-[var(--text-muted)] hover:text-[var(--text-secondary)] hover:bg-[var(--bg-elevated)] transition-all"
-                            >
-                                Reference
-                            </Link>
-                        </div>
-                        <SearchTrigger />
-                    </div>
-                </nav>
+                <BrandNav />
                 <main>{children}</main>
                 <div
                     style={{
