@@ -14,7 +14,7 @@ console.log("[copilotkit/route] Initializing CopilotKit runtime");
 console.log(`[copilotkit/route] AGENT_URL: ${AGENT_URL}`);
 
 function createAgent() {
-    return new LangGraphAgent({ deploymentUrl: `${AGENT_URL}/` });
+    return new LangGraphAgent({ deploymentUrl: `${AGENT_URL}/`, graphId: "agent" });
 }
 
 // Register the same agent under all names used by demo pages.
