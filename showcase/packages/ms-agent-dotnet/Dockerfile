@@ -1,11 +1,10 @@
 # Stage 1: Build Next.js frontend
 FROM node:20-slim AS frontend
 WORKDIR /app
-RUN corepack enable
-COPY package.json pnpm-lock.yaml* ./
-RUN pnpm install --frozen-lockfile
+COPY package.json ./
+RUN npm install
 COPY . .
-RUN pnpm build
+RUN npm run build
 
 # Stage 2: Build .NET agent
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS agent-build
@@ -19,8 +18,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl && \
     curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
     apt-get install -y nodejs && \
-    npm install -g corepack && \
-    corepack enable && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
@@ -38,6 +35,6 @@ COPY --from=agent-build /agent/publish /agent
 COPY entrypoint.sh ./
 RUN chmod +x entrypoint.sh
 
-EXPOSE 3000
+EXPOSE 10000
 ENV NODE_ENV=production
 CMD ["./entrypoint.sh"]

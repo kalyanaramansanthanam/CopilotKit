@@ -16,16 +16,16 @@ export default function RootLayout({
             <body>
                 <script
                     dangerouslySetInnerHTML={{
-                        __html: \`
-                            console.log('[showcase] Demo loaded:', window.location.href);
-                            console.log('[showcase] In iframe:', window.self !== window.top);
-                            window.addEventListener('error', function(e) {
-                                console.error('[showcase] Uncaught error:', e.message, e.filename, e.lineno);
-                            });
-                            window.addEventListener('unhandledrejection', function(e) {
-                                console.error('[showcase] Unhandled rejection:', e.reason);
-                            });
-                        \`,
+                        __html: [
+                            "console.log('[showcase] Demo loaded:', window.location.href);",
+                            "console.log('[showcase] In iframe:', window.self !== window.top);",
+                            "window.addEventListener('error', function(e) {",
+                            "  console.error('[showcase] Uncaught error:', e.message, e.filename, e.lineno);",
+                            "});",
+                            "window.addEventListener('unhandledrejection', function(e) {",
+                            "  console.error('[showcase] Unhandled rejection:', e.reason);",
+                            "});",
+                        ].join("\n"),
                     }}
                 />
                 {children}
@@ -33,3 +33,4 @@ export default function RootLayout({
         </html>
     );
 }
+

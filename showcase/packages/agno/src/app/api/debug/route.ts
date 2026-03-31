@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 const requestLog: Array<{ time: string; method: string; path: string; status: number; durationMs: number }> = [];
 const MAX_LOG_SIZE = 50;
 
-export function logRequest(method: string, path: string, status: number, durationMs: number) {
+function logRequest(method: string, path: string, status: number, durationMs: number) {
     requestLog.push({ time: new Date().toISOString(), method, path, status, durationMs });
     if (requestLog.length > MAX_LOG_SIZE) requestLog.shift();
 }
@@ -27,9 +27,9 @@ export async function GET(req: NextRequest) {
         const res = await fetch(`${AGENT_URL}/health`, { signal: AbortSignal.timeout(3000) });
         agentStatus = res.ok ? "ok" : "error";
         agentDetail = `HTTP ${res.status}`;
-    } catch (e: any) {
+    } catch (e: unknown) {
         agentStatus = "down";
-        agentDetail = e.message;
+        agentDetail = (e as Error).message;
     }
 
     const uptime = process.uptime();

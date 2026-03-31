@@ -1,38 +1,92 @@
+import { NextRequest, NextResponse } from "next/server";
 import {
     CopilotRuntime,
     ExperimentalEmptyAdapter,
     copilotRuntimeNextJSAppRouterEndpoint,
 } from "@copilotkit/runtime";
-import { LangGraphAgent } from "@copilotkit/runtime/langgraph";
-import { NextRequest } from "next/server";
+import { HttpAgent } from "@ag-ui/client";
 
 // The LangGraph TypeScript agent runs as a separate process on port 8123
 // via @langchain/langgraph-cli. This runtime proxies CopilotKit requests
-// to it using the LangGraph AG-UI adapter.
-
-const DEPLOYMENT_URL =
+// to it via AG-UI protocol.
+const AGENT_URL =
     process.env.LANGGRAPH_DEPLOYMENT_URL || "http://localhost:8123";
 
-const serviceAdapter = new ExperimentalEmptyAdapter();
+console.log("[copilotkit/route] Initializing CopilotKit runtime");
+console.log(`[copilotkit/route] AGENT_URL: ${AGENT_URL}`);
 
-const starterAgent = new LangGraphAgent({
-    deploymentUrl: DEPLOYMENT_URL,
-    graphId: "starterAgent",
-    langsmithApiKey: process.env.LANGSMITH_API_KEY || "",
-});
+function createAgent() {
+    return new HttpAgent({ url: `${AGENT_URL}/` });
+}
 
-const runtime = new CopilotRuntime({
-    agents: {
-        starterAgent,
-    },
-});
+// Register the same agent under all names used by demo pages.
+const agentNames = [
+    "agentic_chat",
+    "human_in_the_loop",
+    "tool-rendering",
+    "gen-ui-tool-based",
+];
+
+const agents: Record<string, HttpAgent> = {};
+for (const name of agentNames) {
+    agents[name] = createAgent();
+}
+agents["default"] = createAgent();
+
+console.log(
+    `[copilotkit/route] Registered ${Object.keys(agents).length} agent names: ${Object.keys(agents).join(", ")}`
+);
 
 export const POST = async (req: NextRequest) => {
-    const { handleRequest } = copilotRuntimeNextJSAppRouterEndpoint({
-        runtime,
-        serviceAdapter,
-        endpoint: "/api/copilotkit",
-    });
+    const url = req.url;
+    const contentType = req.headers.get("content-type");
+    console.log(
+        `[copilotkit/route] POST ${url} (content-type: ${contentType})`
+    );
 
-    return handleRequest(req);
+    try {
+        const { handleRequest } = copilotRuntimeNextJSAppRouterEndpoint({
+            endpoint: "/api/copilotkit",
+            serviceAdapter: new ExperimentalEmptyAdapter(),
+            runtime: new CopilotRuntime({
+                agents,
+            }),
+        });
+
+        const response = await handleRequest(req);
+        console.log(`[copilotkit/route] Response status: ${response.status}`);
+        return response;
+    } catch (error: unknown) {
+        const err = error as Error;
+        console.error(`[copilotkit/route] ERROR: ${err.message}`);
+        console.error(`[copilotkit/route] Stack: ${err.stack}`);
+        return NextResponse.json(
+            { error: err.message, stack: err.stack },
+            { status: 500 }
+        );
+    }
+};
+
+export const GET = async () => {
+    console.log("[copilotkit/route] GET /api/copilotkit (health probe)");
+
+    let agentStatus = "unknown";
+    try {
+        const res = await fetch(`${AGENT_URL}/health`, {
+            signal: AbortSignal.timeout(3000),
+        });
+        agentStatus = res.ok ? "reachable" : `error (${res.status})`;
+    } catch (e: unknown) {
+        agentStatus = `unreachable (${(e as Error).message})`;
+    }
+
+    return NextResponse.json({
+        status: "ok",
+        agent_url: AGENT_URL,
+        agent_status: agentStatus,
+        env: {
+            OPENAI_API_KEY: process.env.OPENAI_API_KEY ? "set" : "NOT SET",
+            NODE_ENV: process.env.NODE_ENV,
+        },
+    });
 };
