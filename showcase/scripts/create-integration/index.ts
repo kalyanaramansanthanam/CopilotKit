@@ -1183,7 +1183,7 @@ function updateWorkflows(args: CLIArgs) {
           curl -sf -X POST https://backboard.railway.com/graphql/v2 \\
             -H "Authorization: Bearer \${{ secrets.RAILWAY_TOKEN }}" \\
             -H "Content-Type: application/json" \\
-            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\\\"RAILWAY_SERVICE_ID\\\\", environmentId: \\\\"b14919f4-6417-429f-848d-c6ae2201e04f\\\\") }"}' \\
+            -d '{"query":"mutation { serviceInstanceRedeploy(serviceId: \\"RAILWAY_SERVICE_ID\\", environmentId: \\"b14919f4-6417-429f-848d-c6ae2201e04f\\") }"}' \\
             && echo "${slug} deploy triggered"
 `;
             deploy += buildJob;
