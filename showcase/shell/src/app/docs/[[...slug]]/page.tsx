@@ -129,6 +129,7 @@ const components = {
     IOptions: ({ children }: { children?: React.ReactNode }) => <div>{children}</div>,
     JsonOptions: ({ children }: { children?: React.ReactNode }) => <div>{children}</div>,
     MessageActionRenderProps: ({ children }: { children?: React.ReactNode }) => <div>{children}</div>,
+    CopilotRuntime: ({ children }: { children?: React.ReactNode }) => <div>{children}</div>,
 };
 
 export default async function DocsPage({ params }: { params: Promise<{ slug?: string[] }> }) {
