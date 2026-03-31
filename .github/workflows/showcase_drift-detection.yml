@@ -38,6 +38,12 @@ jobs:
           - slug: google-adk
             name: "Google ADK"
             url: https://showcase-google-adk-production.up.railway.app
+          - slug: ag2
+            name: "AG2"
+            url: https://showcase-ag2-production.up.railway.app
+          - slug: agno
+            name: "Agno"
+            url: https://showcase-agno-production.up.railway.app
 
     steps:
       - name: Checkout
